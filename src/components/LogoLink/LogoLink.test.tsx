@@ -6,9 +6,9 @@ describe('<LogoLink />', () => {
   it('should render text logo', () => {
     renderTheme(<LogoLink link="#target" text="Olá mundo" />);
     expect(
-      screen.getByRole('heading', { name: 'Olá mundo' }),
+      screen.getByRole('heading', { name: 'Olá mundo!' }),
     ).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: 'Olá mundo' })).toHaveAttribute(
+    expect(screen.getByRole('link', { name: 'Olá mundo!' })).toHaveAttribute(
       'href',
       '#target',
     );
