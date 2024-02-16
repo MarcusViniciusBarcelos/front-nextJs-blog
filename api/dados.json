@@ -1,0 +1,165 @@
+{
+  "data": {
+    "setting": {
+      "data": {
+        "id": "1",
+        "attributes": {
+          "blogName": "meu blog",
+          "blogDescription": "blog de testes",
+          "logo": {
+            "data": {
+              "id": "7",
+              "attributes": {
+                "alternativeText": null,
+                "url": "https://res.cloudinary.com/dm5kvicsz/image/upload/v1708022644/react_9bb785764c.png"
+              }
+            }
+          },
+          "menuLink": [
+            {
+              "id": "1",
+              "link": "#link1",
+              "text": "link 1",
+              "newTab": false
+            },
+            {
+              "id": "2",
+              "link": "#link2",
+              "text": "link 2",
+              "newTab": false
+            }
+          ],
+          "text": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "meu footer de boas na lagoa",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "posts": {
+      "data": [
+        {
+          "id": "2",
+          "attributes": {
+            "title": "receitinha",
+            "slug": "receitinha",
+            "excerpt": "uma receita qualquer ",
+            "content": "uma receita maior \n## oooooii\n\n[link do meu git](https://www.linkedin.com/in/marcusviniciusbarcelos/)",
+            "allowComments": true,
+            "cover": {
+              "data": {
+                "id": "7",
+                "attributes": {
+                  "alternativeText": null,
+                  "url": "https://res.cloudinary.com/dm5kvicsz/image/upload/v1708022644/react_9bb785764c.png"
+                }
+              }
+            },
+            "categories": {
+              "data": [
+                {
+                  "id": "2",
+                  "attributes": {
+                    "displayName": "Python",
+                    "slug": "python"
+                  }
+                }
+              ]
+            },
+            "tags": {
+              "data": [
+                {
+                  "id": "2",
+                  "attributes": {
+                    "displayName": "useEffect",
+                    "slug": "use-effect"
+                  }
+                }
+              ]
+            },
+            "author": {
+              "data": {
+                "id": "2",
+                "attributes": {
+                  "displayName": "Ana Caroline",
+                  "slug": "ana-caroline"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "1",
+          "attributes": {
+            "title": "Anunciando Elden Ring: A Cidade Subterrânea",
+            "slug": "anunciando-elden-ring-a-cidade-subterranea",
+            "excerpt": "Prepare-se para explorar um novo mundo em Elden Ring: A Cidade Subterrânea, uma expansão épica que leva você às profundezas das Terras Intermediárias.",
+            "content": "A Cidade Subterrânea é uma expansão massiva que adiciona horas de novo conteúdo ao Elden Ring. Explore um reino subterrâneo totalmente novo, lute contra novos inimigos desafiadores e descubra segredos há muito esquecidos.\n\nCaracterísticas principais:\n\nUma nova área vasta para explorar, com ambientes únicos e inimigos desafiadores.\nNovas missões e histórias para descobrir.\nNovas armas, armaduras e itens mágicos para encontrar.\nUm novo chefe final épico para testar suas habilidades.\nData de lançamento: 2024-03-25\n\n\n```\nPlataformas: PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S, PC\n```\n\n![H7ALWtR.md.jpg](https://res.cloudinary.com/dm5kvicsz/image/upload/v1708018948/H7_AL_Wt_R_md_9dcdc521e6.jpg)",
+            "allowComments": true,
+            "cover": {
+              "data": {
+                "id": "8",
+                "attributes": {
+                  "alternativeText": null,
+                  "url": "https://res.cloudinary.com/dm5kvicsz/image/upload/v1708018948/H7_AL_Wt_R_md_9dcdc521e6.jpg"
+                }
+              }
+            },
+            "categories": {
+              "data": [
+                {
+                  "id": "3",
+                  "attributes": {
+                    "displayName": "Java",
+                    "slug": "java-1"
+                  }
+                },
+                {
+                  "id": "1",
+                  "attributes": {
+                    "displayName": "JavaScript",
+                    "slug": "java-script"
+                  }
+                }
+              ]
+            },
+            "tags": {
+              "data": [
+                {
+                  "id": "2",
+                  "attributes": {
+                    "displayName": "useEffect",
+                    "slug": "use-effect"
+                  }
+                },
+                {
+                  "id": "1",
+                  "attributes": {
+                    "displayName": "useState",
+                    "slug": "use-state"
+                  }
+                }
+              ]
+            },
+            "author": {
+              "data": {
+                "id": "1",
+                "attributes": {
+                  "displayName": "Marcus Barcelos",
+                  "slug": "marcus-barcelos"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

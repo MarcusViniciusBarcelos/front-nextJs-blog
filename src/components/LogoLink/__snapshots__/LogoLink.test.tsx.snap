@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LogoLink /> should match snapshot 1`] = `
+.c1 {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.c1 >img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+}
+
+.c0 {
+  color: #000000;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+<h1
+  class="c0"
+>
+  <a
+    class="c1"
+    href="#target"
+    target="_self"
+  >
+    <img
+      alt="Olá mundo"
+      src="image.jpg"
+    />
+  </a>
+</h1>
+`;
