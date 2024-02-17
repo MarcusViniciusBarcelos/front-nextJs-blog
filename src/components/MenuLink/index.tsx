@@ -9,7 +9,7 @@ export type MenuLinkProps = {
 
 export const MenuLink = ({ children, link, newTab = false }: MenuLinkProps) => {
   const target = newTab ? '_blank' : '_self';
-  const nextLink = link.match(/^\//) ? true : false;
+  const nextLink = link.startsWith('/'); // Utilizando startsWith para verificar se o link começa com '/'
 
   if (nextLink) {
     return (

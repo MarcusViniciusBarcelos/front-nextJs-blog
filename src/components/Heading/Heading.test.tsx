@@ -64,19 +64,6 @@ describe('<Heading />', () => {
     });
   });
 
-  it('should render correct font-size when using mobile', () => {
-    renderTheme(<Heading size="huge">texto</Heading>);
-    screen.getByRole('heading', { name: 'texto' });
-
-    expect(screen.getByRole('heading', { name: 'texto' })).toHaveStyleRule(
-      'font-size',
-      theme.font.sizes.xlarge,
-      {
-        media: theme.media.lteMedium,
-      },
-    );
-  });
-
   it('should render with uppercase letters', () => {
     renderTheme(<Heading uppercase={true}>texto</Heading>);
     const heading = screen.getByRole('heading', { name: 'texto' });

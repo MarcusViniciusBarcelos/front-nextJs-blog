@@ -4,7 +4,7 @@ import { LogoLink } from '.';
 
 describe('<LogoLink />', () => {
   it('should render text logo', () => {
-    renderTheme(<LogoLink link="#target" text="Olá mundo" />);
+    renderTheme(<LogoLink link="#target" text="Olá mundo!" />);
     expect(
       screen.getByRole('heading', { name: 'Olá mundo!' }),
     ).toBeInTheDocument();

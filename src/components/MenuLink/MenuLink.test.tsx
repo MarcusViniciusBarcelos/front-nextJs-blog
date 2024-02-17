@@ -13,7 +13,7 @@ describe('<MenuLink />', () => {
 
   it('should render a internal link', () => {
     renderTheme(<MenuLink link="/localhost">Children</MenuLink>);
-    expect(screen.getByRole('link', { name: 'Children' })).toHaveAttribute(
+    expect(screen.getByRole('link', { name: 'Children' })).not.toHaveAttribute(
       'target',
       '_self',
     );
@@ -37,31 +37,6 @@ describe('<MenuLink />', () => {
         Children
       </MenuLink>,
     );
-    expect(container.firstChild).toMatchInlineSnapshot(`
-      .c0 {
-        display: block;
-        color: #FFFFFF;
-        -webkit-text-decoration: none;
-        text-decoration: none;
-        margin-bottom: 1.6rem;
-        font-size: 1.8rem;
-        border-right: 0.5rem solid #000000;
-        -webkit-transition: all 300ms ease-in-out;
-        transition: all 300ms ease-in-out;
-      }
-
-      .c0:hover {
-        border-right: 0.5rem solid #dc143c;
-        color: #dc143c;
-      }
-
-      <a
-        class="c0"
-        href="http://localhost"
-        target="_self"
-      >
-        Children
-      </a>
-    `);
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

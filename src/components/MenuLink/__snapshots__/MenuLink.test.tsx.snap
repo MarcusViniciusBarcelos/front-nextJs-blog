@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MenuLink /> should render open in a new tab 1`] = `
+.c0 {
+  display: block;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-bottom: 1.6rem;
+  font-size: 1.8rem;
+  border-right: 0.5rem solid #000000;
+  transition: all 300ms ease-in-out;
+}
+
+.c0:hover {
+  border-right: 0.5rem solid #dc143c;
+  color: #dc143c;
+}
+
+<a
+  class="c0"
+  href="http://localhost"
+  target="_self"
+>
+  Children
+</a>
+`;
