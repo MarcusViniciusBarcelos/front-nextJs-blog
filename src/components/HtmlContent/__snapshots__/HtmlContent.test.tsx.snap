@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HtmlContent /> should match snapshot 1`] = `
+.c0 {
+  font-size: 2.4rem;
+}
+
+.c0 p {
+  margin: 1.6rem 0;
+}
+
+<div
+  class="c0"
+>
+  Children
+</div>
+`;
