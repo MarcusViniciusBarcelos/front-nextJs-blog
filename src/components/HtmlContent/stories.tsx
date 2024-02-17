@@ -1,9 +1,9 @@
 import { Meta, StoryFn } from '@storybook/react';
-import { TextComponent, TextComponentProps } from '.';
+import { HtmlContent, HtmlContentProps } from '.';
 
 export default {
-  title: 'TextComponent',
-  component: TextComponent,
+  title: 'HtmlContent',
+  component: HtmlContent,
   args: {
     children: `
     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -11,15 +11,12 @@ export default {
     obcaecati perferendis nobis alias ad aspernatur quod neque,
     corporis, aperiam numquam. Sint consequatur omnis voluptate.`,
   },
-  argTypes: {
-    children: { type: 'string' },
-  },
 } as Meta;
 
-export const Template: StoryFn<TextComponentProps> = (args) => {
+export const Template: StoryFn<HtmlContentProps> = (args) => {
   return (
     <div>
-      <TextComponent {...args} />
+      <HtmlContent {...args} />
     </div>
   );
 };
