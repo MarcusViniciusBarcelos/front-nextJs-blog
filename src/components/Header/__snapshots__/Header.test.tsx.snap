@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should match snapshot 1`] = `
+.c2 {
+  color: #000000;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.c5 {
+  color: #000000;
+  font-size: 2.4rem;
+  text-transform: none;
+}
+
+.c3 {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.c3 >img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+}
+
+.c0 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 6.4rem;
+  width: 100%;
+  max-width: 96rem;
+  color: #333333;
+  font-size: 1.6rem;
+  margin: 0 auto;
+}
+
+.c0 .c1 {
+  margin: 0 0 calc(1.6rem - 1rem);
+}
+
+.c4 {
+  display: flex;
+  flex-flow: column wrap;
+  margin-left: 3.2rem;
+  max-width: 48rem;
+}
+
+<div>
+  <header
+    class="c0"
+  >
+    <h1
+      class="c1 c2"
+    >
+      <a
+        href="/"
+      >
+        <a
+          class="c3"
+          target="_self"
+        >
+          <img
+            alt="Marcus Barcelos - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
+            src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708022537/Whats_App_Image_2023_07_13_at_15_32_56_000d5b42b2.jpg"
+          />
+        </a>
+      </a>
+    </h1>
+    <div
+      class="c4"
+    >
+      <h2
+        class="c1 c5"
+      >
+        Marcus Barcelos
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+      </p>
+    </div>
+  </header>
+</div>
+`;
+
+exports[`<Header /> should match snapshot with image only 1`] = `
+.c2 {
+  color: #000000;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.c3 {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.c3 >img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+}
+
+.c0 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 6.4rem;
+  width: 100%;
+  max-width: 96rem;
+  color: #333333;
+  font-size: 1.6rem;
+  margin: 0 auto;
+}
+
+.c0 .c1 {
+  margin: 0 0 calc(1.6rem - 1rem);
+}
+
+<div>
+  <header
+    class="c0"
+  >
+    <h1
+      class="c1 c2"
+    >
+      <a
+        href="/"
+      >
+        <a
+          class="c3"
+          target="_self"
+        >
+          <img
+            alt="Marcus Barcelos - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
+            src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708022537/Whats_App_Image_2023_07_13_at_15_32_56_000d5b42b2.jpg"
+          />
+        </a>
+      </a>
+    </h1>
+  </header>
+</div>
+`;

@@ -12,7 +12,7 @@ describe('<Header />', () => {
       screen.getByRole('heading', { name: props.blogName }),
     ).toBeInTheDocument();
     expect(
-      screen.getByRole('img', { name: /Otávio Miranda/i }),
+      screen.getByRole('img', { name: /Marcus Barcelos/i }),
     ).toHaveAttribute('src', props.logo);
     expect(screen.getByText(props.blogDescription)).toBeInTheDocument();
   });
@@ -21,10 +21,10 @@ describe('<Header />', () => {
     renderTheme(<Header {...props} showText={false} />);
 
     expect(
-      screen.queryByRole('heading', { name: 'Otávio Miranda' }),
+      screen.queryByRole('heading', { name: 'Marcus Barcelos' }),
     ).not.toBeInTheDocument();
     expect(
-      screen.getByRole('img', { name: /Otávio Miranda/i }),
+      screen.getByRole('img', { name: /Marcus Barcelos/i }),
     ).toHaveAttribute('src', props.logo);
     expect(screen.queryByRole(props.blogDescription)).not.toBeInTheDocument();
   });
@@ -33,6 +33,12 @@ describe('<Header />', () => {
     const { container } = renderTheme(
       <Header {...props} showText={undefined} />,
     );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should match snapshot with image only', () => {
+    const { container } = renderTheme(<Header {...props} showText={false} />);
 
     expect(container).toMatchSnapshot();
   });
