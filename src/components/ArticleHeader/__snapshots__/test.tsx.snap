@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[
+  `<ArticleHeader /> should render heading, excerpt, cover img and meta 1`
+] = `
+.c5 {
+  font-size: 1.6rem;
+  color: #aaaaaa;
+  font-style: italic;
+}
+
+.c5 .categories span::after {
+  content: ', ';
+}
+
+.c5 .categories span:last-child::after {
+  content: '.';
+}
+
+.c5 a {
+  color: #dc143c;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.c5 a:hover {
+  filter: brightness(0.8);
+}
+
+.c2 {
+  color: #000000;
+  font-size: 4.0rem;
+  text-transform: none;
+}
+
+.c0 {
+  padding-bottom: 4.0rem;
+  margin-bottom: 4.0rem;
+  border-bottom: 0.1rem solid #DDDDDD;
+}
+
+.c0 .c1 {
+  margin: 0;
+  margin-bottom: 2.4rem;
+}
+
+.c3 {
+  margin: 2.4rem 0;
+}
+
+.c4 {
+  max-width: 100%;
+  display: block;
+  margin-bottom: 2.4rem;
+}
+
+<div>
+  <header
+    class="c0"
+  >
+    <h1
+      class="c1 c2"
+    >
+      Título do Artigo
+    </h1>
+    <p
+      class="c3"
+    >
+      Excerto do artigo...
+    </p>
+    <img
+      alt="Título do Artigo"
+      class="c4"
+      src="https://napratica.org.br/wp-content/uploads/2018/08/tecnica-feynman.jpg"
+    />
+    <div
+      class="c5"
+    >
+      <p>
+        <span>
+          Por 
+        </span>
+        <a
+          href="/author/autor-do-artigo"
+        >
+          Autor do Artigo
+        </a>
+        <span
+          class="separator"
+        >
+           | 
+        </span>
+        <span>
+          Em 
+        </span>
+        <time
+          datetime="2022-02-18"
+        >
+          17 de fev. de 2022
+        </time>
+        <span
+          class="separator"
+        >
+           | 
+        </span>
+        <span
+          class="categories"
+        >
+          Categorias:
+          <span>
+            <a
+              href="/category/categoria-do-artigo"
+            >
+              Categoria do Artigo
+            </a>
+          </span>
+        </span>
+      </p>
+    </div>
+  </header>
+</div>
+`;
