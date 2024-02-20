@@ -4,6 +4,7 @@ import { Close as CloseIcon } from '@styled-icons/material-outlined/Close';
 import { LogoLink } from '../LogoLink';
 import { MenuLink } from '../MenuLink';
 import { useState } from 'react';
+import { StrapiImage } from '../../shared-types/strapi-image';
 
 export type MenuPropsLinks = {
   id: string;
@@ -15,7 +16,7 @@ export type MenuPropsLinks = {
 export type MenuProps = {
   links: MenuPropsLinks[];
   blogName: string;
-  logo: string;
+  logo: StrapiImage;
 };
 
 export const Menu = ({ links = [], blogName, logo }: MenuProps) => {
@@ -46,7 +47,7 @@ export const Menu = ({ links = [], blogName, logo }: MenuProps) => {
       >
         <Styled.Nav>
           <Styled.Logo>
-            <LogoLink link="/" text={blogName} srcImg={logo} />
+            <LogoLink link="/" text={blogName} srcImg={logo.url} />
           </Styled.Logo>
 
           {links.map((link) => (

@@ -1,4 +1,5 @@
 import { MenuProps } from '.';
+import { StrapiImage } from '../../shared-types/strapi-image';
 
 export default {
   links: [
@@ -70,5 +71,9 @@ export default {
     },
   ],
   blogName: 'Marcus Barcelos',
-  logo: 'https://res.cloudinary.com/dm5kvicsz/image/upload/v1708022537/Whats_App_Image_2023_07_13_at_15_32_56_000d5b42b2.jpg',
+  logo: {
+    id: 'logo-id', // Add the missing 'id' property
+    alternativeText: 'Logo', // Add the missing 'alternativeText' property
+    url: 'https://res.cloudinary.com/dm5kvicsz/image/upload/v1708022537/Whats_App_Image_2023_07_13_at_15_32_56_000d5b42b2.jpg', // Add the missing 'url' property
+  } as StrapiImage,
 } as MenuProps;
