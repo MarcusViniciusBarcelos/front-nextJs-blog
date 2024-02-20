@@ -11,30 +11,38 @@ export type ArticleMetaProps = {
 
 export const ArticleMeta = ({
   createdAt,
-  author,
-  categories,
+  author = undefined,
+  categories = [],
 }: ArticleMetaProps) => {
   return (
     <Styled.Wrapper>
       <p>
-        <span>Por </span>
-        <a href={`/author/${author.slug}`}>{author.displayName}</a>
-        <span className="separator"> | </span>
+        {typeof author !== 'undefined' && (
+          <>
+            <span>Por </span>
+            <a href={`/author/${author.slug}`}>{author.displayName}</a>
+            <span className="separator"> | </span>
+          </>
+        )}
         <span>Em </span>
         <time dateTime={createdAt}>{formatDate(createdAt)}</time>
-        <span className="separator"> | </span>
-        <span className="categories">
-          Categorias:
-          {categories.map((category) => {
-            return (
-              <span key={`article-meta-cat${category.id}`}>
-                <a href={`/category/${category.slug}`}>
-                  {category.displayName}
-                </a>
-              </span>
-            );
-          })}
-        </span>
+        {categories.length > 0 && (
+          <>
+            <span className="separator"> | </span>
+            <span className="categories">
+              Categorias:
+              {categories.map((category) => {
+                return (
+                  <span key={`article-meta-cat${category.id}`}>
+                    <a href={`/category/${category.slug}`}>
+                      {category.displayName}
+                    </a>
+                  </span>
+                );
+              })}
+            </span>
+          </>
+        )}
       </p>
     </Styled.Wrapper>
   );

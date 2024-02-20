@@ -79,3 +79,48 @@ exports[`<ArticleMeta /> should match snapshot 1`] = `
   </div>
 </div>
 `;
+
+exports[
+  `<ArticleMeta /> should match snapshot with no author and no category 1`
+] = `
+.c0 {
+  font-size: 1.6rem;
+  color: #aaaaaa;
+  font-style: italic;
+}
+
+.c0 .categories span::after {
+  content: ', ';
+}
+
+.c0 .categories span:last-child::after {
+  content: '.';
+}
+
+.c0 a {
+  color: #dc143c;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.c0 a:hover {
+  filter: brightness(0.8);
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <p>
+      <span>
+        Em 
+      </span>
+      <time
+        datetime="2021-03-02T15:15:06.246+00:00"
+      >
+        2 de mar. de 2021
+      </time>
+    </p>
+  </div>
+</div>
+`;
