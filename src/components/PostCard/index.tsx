@@ -15,7 +15,7 @@ export const PostCard = ({ slug, title, cover, excerpt }: PostCardProps) => {
   return (
     <Styled.Wrapper>
       <Link href={`/post/${slug}`} passHref>
-        <Styled.Cover src={cover.url} />
+        <Styled.Cover src={cover.url} alt={title} />
       </Link>
       <Link style={{ textDecoration: 'none' }} href={`/post/${slug}`} passHref>
         <Heading as="h2" size="small">
