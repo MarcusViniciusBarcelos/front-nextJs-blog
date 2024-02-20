@@ -29,7 +29,7 @@ exports[
 
 .c2 {
   color: #000000;
-  line-height: 1.2;
+  line-height: 0;
   font-size: 4.0rem;
   text-transform: none;
 }
