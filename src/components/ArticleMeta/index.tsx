@@ -5,8 +5,8 @@ import * as Styled from './styles';
 
 export type ArticleMetaProps = {
   createdAt: string;
-  author: Author;
-  categories: Category[];
+  author?: Author;
+  categories?: Category[];
 };
 
 export const ArticleMeta = ({
