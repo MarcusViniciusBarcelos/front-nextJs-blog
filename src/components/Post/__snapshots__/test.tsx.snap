@@ -187,18 +187,6 @@ exports[`<Post /> should render header, excerpt, cover, metadata and post 1`] =
   }
 }
 
-@media (max-width: 768px) {
-  .c0 {
-    padding: 0 calc(3.2rem / 2);
-  }
-}
-
-@media (max-width: 768px) {
-  .c7 {
-    padding: 0 calc(3.2rem / 2);
-  }
-}
-
 <div>
   <article
     class=""

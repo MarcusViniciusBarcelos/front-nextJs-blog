@@ -308,6 +308,7 @@ exports[`<PostsTemplate /> should match snapshot 1`] = `
   grid-template-columns: repeat(auto-fill,minmax(28rem,1fr));
   gap: 3.2rem;
   margin-top: 3.2rem;
+  padding: 0 3.2rem;
 }
 
 @media (max-width: 768px) {
@@ -863,6 +864,7 @@ exports[`<PostsTemplate /> should match snapshot with no posts 1`] = `
   grid-template-columns: repeat(auto-fill,minmax(28rem,1fr));
   gap: 3.2rem;
   margin-top: 3.2rem;
+  padding: 0 3.2rem;
 }
 
 @media (max-width: 768px) {

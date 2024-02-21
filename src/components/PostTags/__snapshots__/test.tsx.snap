@@ -48,6 +48,14 @@ exports[`<PostTags /> should match snapshot 1`] = `
         useEffect
       </a>
     </span>
+    <span>
+      <a
+        href="/tags/use-state"
+        style="text-decoration: none;"
+      >
+        useState
+      </a>
+    </span>
   </p>
 </div>
 `;
