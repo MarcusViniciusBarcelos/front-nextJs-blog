@@ -15,6 +15,16 @@ export const Wrapper = styled.header`
     ${HeadingStyles} {
       margin: 0 0 calc(${theme.spacings.small} - 1rem);
     }
+
+    @media ${theme.media.lteSmall} {
+      display: flex;
+      flex-flow: column wrap;
+      padding-bottom: ${theme.spacings.large};
+
+      & > ${HeadingStyles} {
+        margin: 0 0 ${theme.spacings.medium} 0;
+      }
+    }
   `}
 `;
 
@@ -24,5 +34,15 @@ export const Content = styled.div`
     flex-flow: column wrap;
     margin-left: ${theme.spacings.large};
     max-width: 48rem;
+
+    @media ${theme.media.lteSmall} {
+      margin-left: 0;
+    }
+  `}
+`;
+
+export const Description = styled.p`
+  ${({ theme }) => css`
+    margin-top: calc(${theme.spacings.xsmall} / 2);
   `}
 `;

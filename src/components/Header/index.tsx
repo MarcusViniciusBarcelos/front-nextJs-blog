@@ -28,7 +28,7 @@ export const Header = ({
           <Heading size="small" as="h2" colorDark={true}>
             {blogName}
           </Heading>
-          <p>{blogDescription}</p>
+          <Styled.Description>{blogDescription}</Styled.Description>
         </Styled.Content>
       )}
     </Styled.Wrapper>
