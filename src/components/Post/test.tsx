@@ -10,18 +10,13 @@ const props: PostProps = mock;
 describe('<Post />', () => {
   it('should render header, excerpt, cover, metadata and post', () => {
     const { container } = renderTheme(<Post {...props} />);
-
+    console.log(container.innerHTML);
     expect(
       screen.getByRole('heading', { name: props.title }),
     ).toBeInTheDocument();
     expect(screen.getByRole('img', { name: props.title })).toBeInTheDocument();
-    expect(
-      screen.getAllByText(/^Fugit aliquip erroribus eu eam/i)[0],
-    ).toBeInTheDocument();
+    expect(screen.getByText('uma receita qualquer')).toBeInTheDocument();
     expect(screen.getByText(formatDate(props.createdAt))).toBeInTheDocument();
-    expect(
-      screen.getByText(/^Blockquote: Et sed legere rationibus/i),
-    ).toBeInTheDocument();
     expect(container).toMatchSnapshot();
   });
 });

@@ -3,7 +3,7 @@
 exports[`<PostCard /> should match snapshot 1`] = `
 .c3 {
   color: #000000;
-  line-height: 0;
+  line-height: 1.2;
   font-size: 2.4rem;
   text-transform: none;
 }
@@ -41,28 +41,28 @@ exports[`<PostCard /> should match snapshot 1`] = `
     class="c0"
   >
     <a
-      href="/post/anunciando-elden-ring-a-cidade-subterranea"
+      href="/post/receitinha"
     >
       <img
-        alt="Anunciando Elden Ring: A Cidade Subterrânea"
+        alt="receitinha"
         class="c1"
-        src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708018948/H7_AL_Wt_R_md_9dcdc521e6.jpg"
+        src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708022644/react_9bb785764c.png"
       />
     </a>
     <a
-      href="/post/anunciando-elden-ring-a-cidade-subterranea"
+      href="/post/receitinha"
       style="text-decoration: none;"
     >
       <h2
         class="c2 c3"
       >
-        Anunciando Elden Ring: A Cidade Subterrânea
+        receitinha
       </h2>
     </a>
     <p
       class="c4"
     >
-      Prepare-se para explorar um novo mundo em Elden Ring: A Cidade Subterrânea, uma expansão épica que leva você às profundezas das Terras Intermediárias.
+      uma receita qualquer 
     </p>
   </div>
 </div>

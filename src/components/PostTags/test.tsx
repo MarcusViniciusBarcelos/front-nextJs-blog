@@ -11,7 +11,7 @@ describe('<PostTags />', () => {
     renderTheme(<PostTags {...props} />);
 
     expect(screen.getByText(/tags:/i)).toBeInTheDocument();
-    expect(screen.getAllByRole('link')).toHaveLength(2);
+    expect(screen.getAllByRole('link')).toHaveLength(1);
   });
 
   it('should match snapshot', () => {

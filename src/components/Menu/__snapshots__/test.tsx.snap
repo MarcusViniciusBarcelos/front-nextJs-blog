@@ -3,7 +3,7 @@
 exports[`<Menu /> should match snapshot 1`] = `
 .c6 {
   color: #000000;
-  line-height: 0;
+  line-height: 1.2;
   font-size: 2.4rem;
   text-transform: uppercase;
 }

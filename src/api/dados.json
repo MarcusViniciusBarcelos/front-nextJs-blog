@@ -47,6 +47,57 @@
       "data": [
         {
           "createdAt": "2020-04-20",
+          "id": "3",
+          "attributes": {
+            "title": "receitinha",
+            "slug": "receitinha",
+            "excerpt": "uma receita qualquer",
+            "content": "uma receita maior \n## oooooii\n\n[link do meu git](https://www.linkedin.com/in/marcusviniciusbarcelos/)",
+            "allowComments": true,
+            "cover": {
+              "data": {
+                "id": "7",
+                "attributes": {
+                  "alternativeText": null,
+                  "url": "https://res.cloudinary.com/dm5kvicsz/image/upload/v1708022644/react_9bb785764c.png"
+                }
+              }
+            },
+            "categories": {
+              "data": [
+                {
+                  "id": "2",
+                  "attributes": {
+                    "displayName": "Python",
+                    "slug": "python"
+                  }
+                }
+              ]
+            },
+            "tags": {
+              "data": [
+                {
+                  "id": "2",
+                  "attributes": {
+                    "displayName": "useEffect",
+                    "slug": "use-effect"
+                  }
+                }
+              ]
+            },
+            "author": {
+              "data": {
+                "id": "2",
+                "attributes": {
+                  "displayName": "Ana Caroline",
+                  "slug": "ana-caroline"
+                }
+              }
+            }
+          }
+        },
+        {
+          "createdAt": "2020-04-20",
           "id": "2",
           "attributes": {
             "title": "receitinha",
