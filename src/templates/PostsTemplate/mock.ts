@@ -26,6 +26,7 @@ const mockTemplateData: PostsTemplateProps = {
     id: post.id,
     title: post.attributes.title,
     slug: post.attributes.slug,
+    createdAt: post.createdAt,
     cover: {
       id: post.attributes.cover.data.id,
       alternativeText: post.attributes.cover.data.attributes.alternativeText,
