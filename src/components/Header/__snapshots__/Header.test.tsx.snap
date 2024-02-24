@@ -51,6 +51,28 @@ exports[`<Header /> should match snapshot 1`] = `
   max-width: 48rem;
 }
 
+.c6 {
+  margin-top: calc(0.8rem / 2);
+}
+
+@media (max-width: 360px) {
+  .c0 {
+    display: flex;
+    flex-flow: column wrap;
+    padding-bottom: 3.2rem;
+  }
+
+  .c0>.c1 {
+    margin: 0 0 2.4rem 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .c4 {
+    margin-left: 0;
+  }
+}
+
 <div>
   <header
     class="c0"
@@ -80,7 +102,9 @@ exports[`<Header /> should match snapshot 1`] = `
       >
         Marcus Barcelos
       </h2>
-      <p>
+      <p
+        class="c6"
+      >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
       </p>
     </div>
@@ -123,6 +147,18 @@ exports[`<Header /> should match snapshot with image only 1`] = `
 
 .c0 .c1 {
   margin: 0 0 calc(1.6rem - 1rem);
+}
+
+@media (max-width: 360px) {
+  .c0 {
+    display: flex;
+    flex-flow: column wrap;
+    padding-bottom: 3.2rem;
+  }
+
+  .c0>.c1 {
+    margin: 0 0 2.4rem 0;
+  }
 }
 
 <div>
