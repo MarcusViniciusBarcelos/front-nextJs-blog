@@ -559,6 +559,19 @@ exports[`<PostTemplate /> should match snapshot 1`] = `
             >
               <p>
                 <span>
+                  Por 
+                </span>
+                <a
+                  href="/author/marcus-barcelos"
+                >
+                  Marcus Barcelos
+                </a>
+                <span
+                  class="separator"
+                >
+                   | 
+                </span>
+                <span>
                   Em 
                 </span>
                 <time>

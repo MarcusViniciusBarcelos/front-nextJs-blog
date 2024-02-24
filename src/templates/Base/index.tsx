@@ -14,27 +14,27 @@ export const BaseTemplate = ({ settings, children }: BaseTemplateProps) => {
   return (
     <Styled.Wrapper>
       <Menu
-        links={settings.menuLink.map((link) => ({
+        links={settings.attributes.menuLink.map((link) => ({
           id: link.id,
           link: link.link,
           newTab: link.newTab,
           text: link.text,
         }))}
-        blogName={settings.blogName}
-        logo={settings.logo}
+        blogName={settings.attributes.blogName}
+        logo={settings.attributes.logo.data}
       />
       <Styled.HeaderContainer>
         <Header
-          blogName={settings.blogName}
-          blogDescription={settings.blogDescription}
-          logo={settings.logo.url}
+          blogName={settings.attributes.blogName}
+          blogDescription={settings.attributes.blogDescription}
+          logo={settings.attributes.logo.data.attributes.url}
         />
       </Styled.HeaderContainer>
 
       <Styled.ContentContainer>{children}</Styled.ContentContainer>
 
       <Styled.FooterContainer>
-        <Footer footerHtml={settings.text} />
+        <Footer footerHtml={settings.attributes.footer} />
       </Styled.FooterContainer>
       <GoTop />
     </Styled.Wrapper>

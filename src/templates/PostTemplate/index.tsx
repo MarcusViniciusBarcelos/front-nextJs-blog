@@ -1,4 +1,4 @@
-import { Post } from '../../components/Post';
+import { Post, PostProps } from '../../components/Post';
 import { PostTags } from '../../components/PostTags';
 import { PostStrapi } from '../../shared-types/post-strapi';
 import { SettingsStrapi } from '../../shared-types/settings-strapi';
@@ -7,7 +7,7 @@ import * as Styled from './styles';
 
 export type PostTemplateProps = {
   settings?: SettingsStrapi;
-  post: PostStrapi;
+  post: PostProps;
 };
 
 export const PostTemplate = ({ settings, post }: PostTemplateProps) => {

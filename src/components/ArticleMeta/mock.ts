@@ -1,22 +1,24 @@
 import { ArticleMetaProps } from '.';
+import { data } from '../../api/dados.json';
 
-export default {
-  createdAt: '2021-03-02T15:15:06.246+00:00',
+const postData = data.posts.data[1];
+
+const mockArticleMetaData: ArticleMetaProps = {
+  createdAt: postData.createdAt,
   author: {
-    id: '1',
-    slug: 'marcus-barcelos',
-    displayName: 'Marcus Barcelos',
+    id: postData.attributes.author.data.id,
+    attributes: {
+      slug: postData.attributes.author.data.attributes.slug,
+      displayName: postData.attributes.author.data.attributes.displayName,
+    },
   },
-  categories: [
-    {
-      id: '1',
-      slug: 'javascript',
-      displayName: 'JavaScript',
+  categories: postData.attributes.categories.data.map((category) => ({
+    id: category.id,
+    attributes: {
+      slug: category.attributes.slug,
+      displayName: category.attributes.displayName,
     },
-    {
-      id: '2',
-      slug: 'react',
-      displayName: 'React',
-    },
-  ],
-} as ArticleMetaProps;
+  })),
+};
+
+export default mockArticleMetaData;

@@ -11,6 +11,7 @@ module.exports = {
     '!<rootDir>/src/pages/**/*.{js,jsx,ts,tsx}',
     '!<rootDir>/**/stories.{js,jsx,ts,tsx}',
     '!<rootDir>/node_modules/',
+    '!<rootDir>/src/graphql/**/*.{js,jsx,ts,tsx}',
   ],
 
   testEnvironment: 'jsdom',

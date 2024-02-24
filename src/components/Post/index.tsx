@@ -1,3 +1,4 @@
+import { PostTag } from '../../shared-types/tag';
 import { ArticleHeader, ArticleHeaderProps } from '../ArticleHeader';
 import { HtmlContent } from '../HtmlContent';
 import { PostContainer } from '../PostContainer';
@@ -5,17 +6,19 @@ import * as Styled from './styles';
 
 export type PostProps = ArticleHeaderProps & {
   content: string;
+  id: string;
+  tags: PostTag[];
 };
 
 export const Post = ({
-  title,
+  id,
   author,
   categories,
   content,
   cover,
   createdAt,
   excerpt,
-  id,
+  title,
 }: PostProps) => {
   return (
     <Styled.Wrapper>

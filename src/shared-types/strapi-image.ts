@@ -1,5 +1,7 @@
 export type StrapiImage = {
   id: string;
-  alternativeText: string;
-  url: string;
+  attributes: {
+    alternativeText: string;
+    url: string;
+  };
 };

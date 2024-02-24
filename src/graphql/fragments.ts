@@ -88,7 +88,7 @@ export const GRAPHQL_FRAGMENTS = gql`
       menuLink {
         ...menuLink
       }
-      text
+      footer
     }
   }
 `;

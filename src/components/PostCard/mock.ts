@@ -8,11 +8,7 @@ const mockPostData: PostCardProps = {
   slug: postData.slug,
   title: postData.title,
   excerpt: postData.excerpt,
-  cover: {
-    id: postData.cover.data.id,
-    alternativeText: postData.cover.data.attributes.alternativeText,
-    url: postData.cover.data.attributes.url,
-  },
+  cover: postData.cover.data.attributes.url,
 };
 
 export default mockPostData;

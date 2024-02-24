@@ -47,7 +47,7 @@ export const Menu = ({ links = [], blogName, logo }: MenuProps) => {
       >
         <Styled.Nav>
           <Styled.Logo>
-            <LogoLink link="/" text={blogName} srcImg={logo.url} />
+            <LogoLink link="/" text={blogName} srcImg={logo.attributes.url} />
           </Styled.Logo>
 
           {links.map((link) => (

@@ -1,28 +1,28 @@
 import { ArticleHeaderProps } from '.';
+import { data } from '../../api/dados.json';
 
+const postData = data.posts.data;
 // Mock dos dados fictícios
 const mockArticleHeaderData: ArticleHeaderProps = {
-  id: '1',
-  title: 'Título do Artigo',
-  excerpt: 'Excerto do artigo...',
-  cover: {
-    id: '1',
-    alternativeText: 'Texto alternativo da capa',
-    url: 'https://napratica.org.br/wp-content/uploads/2018/08/tecnica-feynman.jpg',
-  },
-  author: {
-    id: '1',
-    displayName: 'Autor do Artigo',
-    slug: 'autor-do-artigo',
-  },
-  categories: [
-    {
-      id: '1',
-      displayName: 'Categoria do Artigo',
-      slug: 'categoria-do-artigo',
+  title: postData[0].attributes.title,
+  id: postData[0].id,
+  createdAt: postData[0].createdAt,
+  excerpt: postData[0].attributes.excerpt,
+  categories: postData[0].attributes.categories.data.map((category) => ({
+    id: category.id,
+    attributes: {
+      displayName: category.attributes.displayName,
+      slug: category.attributes.slug,
     },
-  ],
-  createdAt: '2022-02-18',
+  })),
+  author: {
+    id: postData[0].attributes.author.data.id,
+    attributes: {
+      displayName: postData[0].attributes.author.data.attributes.displayName,
+      slug: postData[0].attributes.author.data.attributes.slug,
+    },
+  },
+  cover: postData[0].attributes.cover.data.attributes.url,
 };
 
 export default mockArticleHeaderData;

@@ -1,14 +1,14 @@
 import { SettingsStrapi } from '../../shared-types/settings-strapi';
 import { BaseTemplate } from '../Base';
 import { PostGrid } from '../../components/PostGrid';
-import { PostStrapi } from '../../shared-types/post-strapi';
+import { PostCardProps } from '../../components/PostCard';
 
 export type PostsTemplateProps = {
   settings?: SettingsStrapi;
-  posts?: PostStrapi[];
+  posts?: PostCardProps[];
 };
 
-export const PostsTemplate = ({ settings, posts = [] }: PostsTemplateProps) => {
+export const PostsTemplate = ({ settings, posts }: PostsTemplateProps) => {
   return (
     <>
       <BaseTemplate settings={settings}>

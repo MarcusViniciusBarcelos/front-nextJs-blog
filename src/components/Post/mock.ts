@@ -4,28 +4,33 @@ import { data } from '../../api/dados.json';
 const postData = data.posts.data[1].attributes;
 
 const mockPostData: PostProps = {
-  id: data.posts.data[0].id,
-  title: postData.title,
-  excerpt: postData.excerpt,
-  cover: {
-    id: postData.cover.data.id,
-    alternativeText: postData.cover.data.attributes.alternativeText,
-    url: postData.cover.data.attributes.url,
-  },
-  content: postData.content,
-  createdAt: data.posts.data[0].createdAt,
   author: {
     id: postData.author.data.id,
-    displayName: postData.author.data.attributes.displayName,
-    slug: postData.author.data.attributes.slug,
-  },
-  categories: [
-    {
-      id: postData.categories.data[0].id,
-      displayName: postData.categories.data[0].attributes.displayName,
-      slug: postData.categories.data[0].attributes.slug,
+    attributes: {
+      displayName: postData.author.data.attributes.displayName,
+      slug: postData.author.data.attributes.slug,
     },
-  ],
+  },
+  categories: postData.categories.data.map((category) => ({
+    id: category.id,
+    attributes: {
+      displayName: category.attributes.displayName,
+      slug: category.attributes.slug,
+    },
+  })),
+  content: postData.content,
+  cover: postData.cover.data.attributes.url,
+  createdAt: data.posts.data[1].createdAt,
+  id: data.posts.data[1].id,
+  excerpt: postData.excerpt,
+  title: postData.title,
+  tags: postData.tags.data.map((tag) => ({
+    id: tag.id,
+    attributes: {
+      displayName: tag.attributes.displayName,
+      slug: tag.attributes.slug,
+    },
+  })),
 };
 
 // const mockPostData: PostProps = {

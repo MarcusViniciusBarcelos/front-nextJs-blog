@@ -5,8 +5,10 @@ const postData = data.posts.data[2];
 
 const mockPostTags: PostTagsProps = {
   tags: postData.attributes.tags.data.map((tag) => ({
-    displayName: tag.attributes.displayName,
-    slug: tag.attributes.slug,
+    attributes: {
+      displayName: tag.attributes.displayName,
+      slug: tag.attributes.slug,
+    },
     id: tag.id,
   })),
 };

@@ -11,7 +11,7 @@ describe('<Base />', () => {
     renderTheme(<BaseTemplate {...props} />);
 
     expect(
-      screen.getByRole('heading', { name: mock.settings.blogName }),
+      screen.getByRole('heading', { name: mock.settings.attributes.blogName }),
     ).toBeInTheDocument();
     expect(
       screen.getByRole('link', { name: 'meu blog - blog de testes' }),

@@ -143,129 +143,26 @@ exports[`<Menu /> should match snapshot 1`] = `
               target="_self"
             >
               <img
-                alt="Marcus Barcelos"
-                src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708022537/Whats_App_Image_2023_07_13_at_15_32_56_000d5b42b2.jpg"
+                alt="meu blog"
+                src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708022644/react_9bb785764c.png"
               />
             </a>
           </a>
         </h1>
       </div>
       <a
-        href="/home/1"
-        style="text-decoration: none;"
+        class="c8"
+        href="#link1"
+        target="_self"
       >
-        <a
-          class="c8"
-          target="_self"
-        >
-          My jobs
-        </a>
-      </a>
-      <a
-        href="/home/2"
-        style="text-decoration: none;"
-      >
-        <a
-          class="c8"
-          target="_self"
-        >
-          About me
-        </a>
-      </a>
-      <a
-        href="/home/3"
-        style="text-decoration: none;"
-      >
-        <a
-          class="c8"
-          target="_self"
-        >
-          Services
-        </a>
+        link 1
       </a>
       <a
         class="c8"
-        href="http://localhost/home/4"
+        href="#link2"
         target="_self"
       >
-        External Link
-      </a>
-      <a
-        href="/home/5"
-        style="text-decoration: none;"
-      >
-        <a
-          class="c8"
-          target="_self"
-        >
-          JavaScript
-        </a>
-      </a>
-      <a
-        href="/home/6"
-        style="text-decoration: none;"
-      >
-        <a
-          class="c8"
-          target="_self"
-        >
-          Python
-        </a>
-      </a>
-      <a
-        href="/home/7"
-        style="text-decoration: none;"
-      >
-        <a
-          class="c8"
-          target="_self"
-        >
-          Consectetur
-        </a>
-      </a>
-      <a
-        href="/home/8"
-        style="text-decoration: none;"
-      >
-        <a
-          class="c8"
-          target="_self"
-        >
-          Text test
-        </a>
-      </a>
-      <a
-        href="/home/9"
-        style="text-decoration: none;"
-      >
-        <a
-          class="c8"
-          target="_self"
-        >
-          Pac-man
-        </a>
-      </a>
-      <a
-        href="/home/10"
-        style="text-decoration: none;"
-      >
-        <a
-          class="c8"
-          target="_self"
-        >
-          Star Wars
-        </a>
-      </a>
-      <a
-        href="/home/11"
-        style="text-decoration: none;"
-      >
-        <a
-          class="c8"
-          target="_self"
-        >
-          A menu
-        </a>
+        link 2
       </a>
     </nav>
   </div>

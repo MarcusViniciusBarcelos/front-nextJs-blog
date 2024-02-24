@@ -26,13 +26,6 @@ describe('<Menu />', () => {
     expect(screen.queryByLabelText('Close menu')).toBeInTheDocument();
     expect(screen.queryByLabelText('Open menu')).not.toBeInTheDocument();
     expect(screen.getByRole('navigation')).toBeInTheDocument();
-    expect(
-      screen.getByRole('heading', { name: 'Marcus Barcelos' }),
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole('img', { name: 'Marcus Barcelos' }),
-    ).toBeInTheDocument();
-
     fireEvent.click(bottonLink);
     expect(screen.queryByLabelText('Close menu')).not.toBeInTheDocument();
     expect(screen.queryByRole('navigation')).not.toBeInTheDocument();

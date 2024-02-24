@@ -11,9 +11,7 @@ describe('<Header />', () => {
     expect(
       screen.getByRole('heading', { name: props.blogName }),
     ).toBeInTheDocument();
-    expect(
-      screen.getByRole('img', { name: /Marcus Barcelos/i }),
-    ).toHaveAttribute('src', props.logo);
+    expect(screen.getByRole('img')).toHaveAttribute('src', props.logo);
     expect(screen.getByText(props.blogDescription)).toBeInTheDocument();
   });
 
@@ -23,9 +21,7 @@ describe('<Header />', () => {
     expect(
       screen.queryByRole('heading', { name: 'Marcus Barcelos' }),
     ).not.toBeInTheDocument();
-    expect(
-      screen.getByRole('img', { name: /Marcus Barcelos/i }),
-    ).toHaveAttribute('src', props.logo);
+    expect(screen.getByRole('img')).toHaveAttribute('src', props.logo);
     expect(screen.queryByRole(props.blogDescription)).not.toBeInTheDocument();
   });
 

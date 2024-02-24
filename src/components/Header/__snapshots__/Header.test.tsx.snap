@@ -88,8 +88,8 @@ exports[`<Header /> should match snapshot 1`] = `
           target="_self"
         >
           <img
-            alt="Marcus Barcelos - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
-            src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708022537/Whats_App_Image_2023_07_13_at_15_32_56_000d5b42b2.jpg"
+            alt="meu blog - blog de testes"
+            src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708022644/react_9bb785764c.png"
           />
         </a>
       </a>
@@ -100,12 +100,12 @@ exports[`<Header /> should match snapshot 1`] = `
       <h2
         class="c1 c5"
       >
-        Marcus Barcelos
+        meu blog
       </h2>
       <p
         class="c6"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+        blog de testes
       </p>
     </div>
   </header>
@@ -176,8 +176,8 @@ exports[`<Header /> should match snapshot with image only 1`] = `
           target="_self"
         >
           <img
-            alt="Marcus Barcelos - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
-            src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708022537/Whats_App_Image_2023_07_13_at_15_32_56_000d5b42b2.jpg"
+            alt="meu blog - blog de testes"
+            src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708022644/react_9bb785764c.png"
           />
         </a>
       </a>

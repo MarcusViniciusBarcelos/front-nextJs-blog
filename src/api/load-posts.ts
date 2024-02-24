@@ -1,10 +1,9 @@
 import request from 'graphql-request';
 import config from '../config';
 import { GRAPHQL_QUERIES } from '../graphql/queries';
-import { PostStrapi } from '../shared-types/post-strapi';
 import { SettingsStrapi } from '../shared-types/settings-strapi';
-import { StrapiImage } from '../shared-types/strapi-image';
-import { MenuPropsLinks } from '../components/Menu';
+import { PostCardProps } from '../components/PostCard';
+import { PostStrapi } from '../shared-types/post-strapi';
 
 export type LoadPostsVariables = {
   categorySlug?: string;
@@ -19,49 +18,10 @@ export type LoadPostsVariables = {
 
 export type StrapiPostsAndSettings = {
   setting: {
-    data: {
-      id: string;
-      attributes: {
-        blogName: string;
-        blogDescription: string;
-        logo: StrapiImage;
-        menuLink: MenuPropsLinks[];
-        text: string;
-      };
-    };
+    data: SettingsStrapi;
   };
   posts: {
-    data: {
-      id: string;
-      attributes: {
-        title: string;
-        slug: string;
-        excerpt: string;
-        content: string;
-        allowComments: boolean;
-        cover: {
-          data: StrapiImage;
-        };
-        categories: {
-          data: {
-            id: string;
-            attributes: {
-              name: string;
-              slug: string;
-            };
-          }[];
-        };
-        tags: {
-          data: {
-            id: string;
-            attributes: {
-              name: string;
-              slug: string;
-            };
-          }[];
-        };
-      };
-    }[];
+    data: PostCardProps[];
   };
 };
 
@@ -83,6 +43,5 @@ export const loadPosts = async (
       ...variables,
     },
   );
-
   return data;
 };
