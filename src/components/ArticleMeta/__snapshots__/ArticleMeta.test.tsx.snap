@@ -47,9 +47,9 @@ exports[`<ArticleMeta /> should match snapshot 1`] = `
         Em 
       </span>
       <time
-        datetime="2020-04-20"
+        datetime="2024-02-21T20:54:59.282Z"
       >
-        19 de abr. de 2020
+        21 de fev. de 2024
       </time>
       <span
         class="separator"
@@ -62,9 +62,9 @@ exports[`<ArticleMeta /> should match snapshot 1`] = `
         Categorias:
         <span>
           <a
-            href="/category/python"
+            href="/category/artigos"
           >
-            Python
+            Artigos
           </a>
         </span>
       </span>
@@ -109,9 +109,9 @@ exports[
         Em 
       </span>
       <time
-        datetime="2020-04-20"
+        datetime="2024-02-21T20:54:59.282Z"
       >
-        19 de abr. de 2020
+        21 de fev. de 2024
       </time>
     </p>
   </div>

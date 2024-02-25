@@ -360,8 +360,8 @@ exports[`<Base /> should match snapshot 1`] = `
                 target="_self"
               >
                 <img
-                  alt="meu blog"
-                  src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708022644/react_9bb785764c.png"
+                  alt="Marcus Vinicius Barcelos"
+                  src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708548805/Whats_App_Image_2023_07_14_at_14_06_20_b0f008c8f3.jpg"
                 />
               </a>
             </a>
@@ -370,16 +370,23 @@ exports[`<Base /> should match snapshot 1`] = `
         <a
           class="c8"
           href="#link1"
-          target="_self"
+          target="_blank"
         >
-          link 1
+          ink1
         </a>
         <a
           class="c8"
           href="#link2"
-          target="_self"
+          target="_blank"
         >
           link 2
+        </a>
+        <a
+          class="c8"
+          href="#link 3"
+          target="_blank"
+        >
+          link3
         </a>
       </nav>
     </div>
@@ -400,8 +407,8 @@ exports[`<Base /> should match snapshot 1`] = `
               target="_self"
             >
               <img
-                alt="meu blog - blog de testes"
-                src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708022644/react_9bb785764c.png"
+                alt="Marcus Vinicius Barcelos - Meu blog SSG construido em Strapi + Next.js, React, Storybook, Jest e Testing Library co autentificação de usuarios (NextAuth.jscom JWT Tokens, Cookies seguros com httpOnly e rotas de verificação do token e do usuário) e prevenção contra ataques CSRF "
+                src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708548805/Whats_App_Image_2023_07_14_at_14_06_20_b0f008c8f3.jpg"
               />
             </a>
           </a>
@@ -412,12 +419,12 @@ exports[`<Base /> should match snapshot 1`] = `
           <h2
             class="c5 c12"
           >
-            meu blog
+            Marcus Vinicius Barcelos
           </h2>
           <p
             class="c13"
           >
-            blog de testes
+            Meu blog SSG construido em Strapi + Next.js, React, Storybook, Jest e Testing Library co autentificação de usuarios (NextAuth.jscom JWT Tokens, Cookies seguros com httpOnly e rotas de verificação do token e do usuário) e prevenção contra ataques CSRF 
           </p>
         </div>
       </header>
@@ -436,7 +443,7 @@ exports[`<Base /> should match snapshot 1`] = `
         <div
           class="c17"
         >
-          meu footer de boas na lagoa
+          meu footer
         </div>
       </footer>
     </div>

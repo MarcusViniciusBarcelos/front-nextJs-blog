@@ -12,7 +12,7 @@ describe('<Header />', () => {
       screen.getByRole('heading', { name: props.blogName }),
     ).toBeInTheDocument();
     expect(screen.getByRole('img')).toHaveAttribute('src', props.logo);
-    expect(screen.getByText(props.blogDescription)).toBeInTheDocument();
+    expect(screen.getByText(new RegExp('Meu blog SSG'))).toBeInTheDocument();
   });
 
   it('should render image only', () => {

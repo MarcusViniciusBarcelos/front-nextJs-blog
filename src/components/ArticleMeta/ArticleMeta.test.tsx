@@ -13,16 +13,16 @@ describe('<ArticleMeta />', () => {
     expect(
       screen.getByRole('link', { name: mock.author.attributes.displayName }),
     ).toHaveAttribute('href', `/author/${mock.author.attributes.slug}`);
-    expect(screen.getByRole('link', { name: 'Python' })).toHaveAttribute(
+    expect(screen.getByRole('link', { name: 'Artigos' })).toHaveAttribute(
       'href',
-      '/category/python',
+      '/category/artigos',
     );
   });
 
   it('should format date', () => {
     renderTheme(<ArticleMeta {...props} />);
 
-    expect(screen.getByText('19 de abr. de 2020')).toHaveAttribute(
+    expect(screen.getByText('21 de fev. de 2024')).toHaveAttribute(
       'datetime',
       props.createdAt,
     );

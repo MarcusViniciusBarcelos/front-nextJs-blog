@@ -409,8 +409,8 @@ exports[`<PostsTemplate /> should match snapshot 1`] = `
                 target="_self"
               >
                 <img
-                  alt="meu blog"
-                  src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708022644/react_9bb785764c.png"
+                  alt="Marcus Vinicius Barcelos"
+                  src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708548805/Whats_App_Image_2023_07_14_at_14_06_20_b0f008c8f3.jpg"
                 />
               </a>
             </a>
@@ -419,16 +419,23 @@ exports[`<PostsTemplate /> should match snapshot 1`] = `
         <a
           class="c8"
           href="#link1"
-          target="_self"
+          target="_blank"
         >
-          link 1
+          ink1
         </a>
         <a
           class="c8"
           href="#link2"
-          target="_self"
+          target="_blank"
         >
           link 2
+        </a>
+        <a
+          class="c8"
+          href="#link 3"
+          target="_blank"
+        >
+          link3
         </a>
       </nav>
     </div>
@@ -449,8 +456,8 @@ exports[`<PostsTemplate /> should match snapshot 1`] = `
               target="_self"
             >
               <img
-                alt="meu blog - blog de testes"
-                src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708022644/react_9bb785764c.png"
+                alt="Marcus Vinicius Barcelos - Meu blog SSG construido em Strapi + Next.js, React, Storybook, Jest e Testing Library co autentificação de usuarios (NextAuth.jscom JWT Tokens, Cookies seguros com httpOnly e rotas de verificação do token e do usuário) e prevenção contra ataques CSRF "
+                src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708548805/Whats_App_Image_2023_07_14_at_14_06_20_b0f008c8f3.jpg"
               />
             </a>
           </a>
@@ -461,12 +468,12 @@ exports[`<PostsTemplate /> should match snapshot 1`] = `
           <h2
             class="c5 c12"
           >
-            meu blog
+            Marcus Vinicius Barcelos
           </h2>
           <p
             class="c13"
           >
-            blog de testes
+            Meu blog SSG construido em Strapi + Next.js, React, Storybook, Jest e Testing Library co autentificação de usuarios (NextAuth.jscom JWT Tokens, Cookies seguros com httpOnly e rotas de verificação do token e do usuário) e prevenção contra ataques CSRF 
           </p>
         </div>
       </header>
@@ -484,56 +491,56 @@ exports[`<PostsTemplate /> should match snapshot 1`] = `
             class="c17"
           >
             <a
-              href="/post/receitinha"
+              href="/post/a-profecia-de-elden-ring-revelacoes-e-desafios"
             >
               <img
-                alt="receitinha"
+                alt="A Profecia de Elden Ring: Revelações e Desafios"
                 class="c18"
-                src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708022644/react_9bb785764c.png"
+                src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708548805/images_d970d970fc.jpg"
               />
             </a>
             <a
-              href="/post/receitinha"
+              href="/post/a-profecia-de-elden-ring-revelacoes-e-desafios"
               style="text-decoration: none;"
             >
               <h2
                 class="c5 c12"
               >
-                receitinha
+                A Profecia de Elden Ring: Revelações e Desafios
               </h2>
             </a>
             <p
               class="c19"
             >
-              uma receita qualquer
+              Desvende os segredos ocultos por trás da profecia de Elden Ring e prepare-se para enfrentar desafios épicos que testarão sua coragem e determinação.
             </p>
           </div>
           <div
             class="c17"
           >
             <a
-              href="/post/receitinha"
+              href="/post/desbravando-novos-horizontes-elden-ring-revelado"
             >
               <img
-                alt="receitinha"
+                alt="Desbravando Novos Horizontes: Elden Ring Revelado"
                 class="c18"
-                src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708022644/react_9bb785764c.png"
+                src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708548805/homem_aranha_apontando_og_f5bff531dd.webp"
               />
             </a>
             <a
-              href="/post/receitinha"
+              href="/post/desbravando-novos-horizontes-elden-ring-revelado"
               style="text-decoration: none;"
             >
               <h2
                 class="c5 c12"
               >
-                receitinha
+                Desbravando Novos Horizontes: Elden Ring Revelado
               </h2>
             </a>
             <p
               class="c19"
             >
-              uma receita qualquer 
+              Prepare-se para uma nova jornada em Elden Ring, onde os limites do mundo são desafiados e novos horizontes são descobertos.
             </p>
           </div>
           <div
@@ -545,7 +552,7 @@ exports[`<PostsTemplate /> should match snapshot 1`] = `
               <img
                 alt="Anunciando Elden Ring: A Cidade Subterrânea"
                 class="c18"
-                src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708018948/H7_AL_Wt_R_md_9dcdc521e6.jpg"
+                src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708548712/react_23294b0bfa.png"
               />
             </a>
             <a
@@ -576,7 +583,7 @@ exports[`<PostsTemplate /> should match snapshot 1`] = `
         <div
           class="c22"
         >
-          meu footer de boas na lagoa
+          meu footer
         </div>
       </footer>
     </div>
@@ -990,8 +997,8 @@ exports[`<PostsTemplate /> should match snapshot with no posts 1`] = `
                 target="_self"
               >
                 <img
-                  alt="meu blog"
-                  src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708022644/react_9bb785764c.png"
+                  alt="Marcus Vinicius Barcelos"
+                  src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708548805/Whats_App_Image_2023_07_14_at_14_06_20_b0f008c8f3.jpg"
                 />
               </a>
             </a>
@@ -1000,16 +1007,23 @@ exports[`<PostsTemplate /> should match snapshot with no posts 1`] = `
         <a
           class="c8"
           href="#link1"
-          target="_self"
+          target="_blank"
         >
-          link 1
+          ink1
         </a>
         <a
           class="c8"
           href="#link2"
-          target="_self"
+          target="_blank"
         >
           link 2
+        </a>
+        <a
+          class="c8"
+          href="#link 3"
+          target="_blank"
+        >
+          link3
         </a>
       </nav>
     </div>
@@ -1030,8 +1044,8 @@ exports[`<PostsTemplate /> should match snapshot with no posts 1`] = `
               target="_self"
             >
               <img
-                alt="meu blog - blog de testes"
-                src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708022644/react_9bb785764c.png"
+                alt="Marcus Vinicius Barcelos - Meu blog SSG construido em Strapi + Next.js, React, Storybook, Jest e Testing Library co autentificação de usuarios (NextAuth.jscom JWT Tokens, Cookies seguros com httpOnly e rotas de verificação do token e do usuário) e prevenção contra ataques CSRF "
+                src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708548805/Whats_App_Image_2023_07_14_at_14_06_20_b0f008c8f3.jpg"
               />
             </a>
           </a>
@@ -1042,12 +1056,12 @@ exports[`<PostsTemplate /> should match snapshot with no posts 1`] = `
           <h2
             class="c5 c12"
           >
-            meu blog
+            Marcus Vinicius Barcelos
           </h2>
           <p
             class="c13"
           >
-            blog de testes
+            Meu blog SSG construido em Strapi + Next.js, React, Storybook, Jest e Testing Library co autentificação de usuarios (NextAuth.jscom JWT Tokens, Cookies seguros com httpOnly e rotas de verificação do token e do usuário) e prevenção contra ataques CSRF 
           </p>
         </div>
       </header>
@@ -1077,7 +1091,7 @@ exports[`<PostsTemplate /> should match snapshot with no posts 1`] = `
         <div
           class="c20"
         >
-          meu footer de boas na lagoa
+          meu footer
         </div>
       </footer>
     </div>

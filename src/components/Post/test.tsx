@@ -15,7 +15,11 @@ describe('<Post />', () => {
       screen.getByRole('heading', { name: props.title }),
     ).toBeInTheDocument();
     expect(screen.getByRole('img', { name: props.title })).toBeInTheDocument();
-    expect(screen.getByText('uma receita qualquer')).toBeInTheDocument();
+    expect(
+      screen.getByText(
+        'Prepare-se para uma nova jornada em Elden Ring, onde os limites do mundo são desafiados e novos horizontes são descobertos.',
+      ),
+    ).toBeInTheDocument();
     expect(screen.getByText(formatDate(props.createdAt))).toBeInTheDocument();
     expect(container).toMatchSnapshot();
   });

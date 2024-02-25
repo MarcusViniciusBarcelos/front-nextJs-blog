@@ -465,8 +465,8 @@ exports[`<PostTemplate /> should match snapshot 1`] = `
                 target="_self"
               >
                 <img
-                  alt="meu blog"
-                  src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708022644/react_9bb785764c.png"
+                  alt="Marcus Vinicius Barcelos"
+                  src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708548805/Whats_App_Image_2023_07_14_at_14_06_20_b0f008c8f3.jpg"
                 />
               </a>
             </a>
@@ -475,16 +475,23 @@ exports[`<PostTemplate /> should match snapshot 1`] = `
         <a
           class="c8"
           href="#link1"
-          target="_self"
+          target="_blank"
         >
-          link 1
+          ink1
         </a>
         <a
           class="c8"
           href="#link2"
-          target="_self"
+          target="_blank"
         >
           link 2
+        </a>
+        <a
+          class="c8"
+          href="#link 3"
+          target="_blank"
+        >
+          link3
         </a>
       </nav>
     </div>
@@ -505,8 +512,8 @@ exports[`<PostTemplate /> should match snapshot 1`] = `
               target="_self"
             >
               <img
-                alt="meu blog - blog de testes"
-                src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708022644/react_9bb785764c.png"
+                alt="Marcus Vinicius Barcelos - Meu blog SSG construido em Strapi + Next.js, React, Storybook, Jest e Testing Library co autentificação de usuarios (NextAuth.jscom JWT Tokens, Cookies seguros com httpOnly e rotas de verificação do token e do usuário) e prevenção contra ataques CSRF "
+                src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708548805/Whats_App_Image_2023_07_14_at_14_06_20_b0f008c8f3.jpg"
               />
             </a>
           </a>
@@ -517,12 +524,12 @@ exports[`<PostTemplate /> should match snapshot 1`] = `
           <h2
             class="c5 c12"
           >
-            meu blog
+            Marcus Vinicius Barcelos
           </h2>
           <p
             class="c13"
           >
-            blog de testes
+            Meu blog SSG construido em Strapi + Next.js, React, Storybook, Jest e Testing Library co autentificação de usuarios (NextAuth.jscom JWT Tokens, Cookies seguros com httpOnly e rotas de verificação do token e do usuário) e prevenção contra ataques CSRF 
           </p>
         </div>
       </header>
@@ -552,7 +559,7 @@ exports[`<PostTemplate /> should match snapshot 1`] = `
             <img
               alt="Anunciando Elden Ring: A Cidade Subterrânea"
               class="c19"
-              src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708018948/H7_AL_Wt_R_md_9dcdc521e6.jpg"
+              src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708548712/react_23294b0bfa.png"
             />
             <div
               class="c20"
@@ -574,8 +581,10 @@ exports[`<PostTemplate /> should match snapshot 1`] = `
                 <span>
                   Em 
                 </span>
-                <time>
-                  Invalid Date
+                <time
+                  datetime="2024-02-21T20:53:44.848Z"
+                >
+                  21 de fev. de 2024
                 </time>
                 <span
                   class="separator"
@@ -588,16 +597,9 @@ exports[`<PostTemplate /> should match snapshot 1`] = `
                   Categorias:
                   <span>
                     <a
-                      href="/category/java-1"
+                      href="/category/artigos"
                     >
-                      Java
-                    </a>
-                  </span>
-                  <span>
-                    <a
-                      href="/category/java-script"
-                    >
-                      JavaScript
+                      Artigos
                     </a>
                   </span>
                 </span>
@@ -630,13 +632,13 @@ exports[`<PostTemplate /> should match snapshot 1`] = `
               </code>
               , useState dicat fabulas 
               <a
-                href="https://gist.github.com/luizomf/e7cf0c3d172801225cce694681ecb0ad"
+                href="\\"https://gist.github.com/luizomf/e7cf0c3d172801225cce694681ecb0ad\\""
               >
                 consetetur
               </a>
                no, odio deseruisse assueverit mei eu, vis probo nonumes molestie id. Ipsum movet liberavisse an mea, diceret vituperata ne his, delenit apeirian quo ea. Imperdiet percipitur te eos. Per ludus aliquam cu. 
               <a
-                href="https://gist.github.com/luizomf/e7cf0c3d172801225cce694681ecb0ad"
+                href="\\"https://gist.github.com/luizomf/e7cf0c3d172801225cce694681ecb0ad\\""
               >
                 Eos ex tincidunt necessitatibus, timeam theophrastus mel cu
               </a>
@@ -644,25 +646,9 @@ exports[`<PostTemplate /> should match snapshot 1`] = `
             </p>
             <pre>
               <code
-                class="language-plaintext"
+                class="\\"language-plaintext\\""
               >
-                import { useEffect, useRef, useState } from 'react';
-
-const useMyHook = (cb, delay = 1000) =&gt; {
-  const savedCb = useRef();
-
-  useEffect(() =&gt; {
-    savedCb.current = cb;
-  }, [cb]);
-
-  useEffect(() =&gt; {
-    const interval = setInterval(() =&gt; {
-      savedCb.current();
-    }, delay);
-
-    return () =&gt; clearInterval(interval);
-  }, [delay]);
-};
+                import { useEffect, useRef, useState } from 'react';\\n\\nconst useMyHook = (cb, delay = 1000) =&gt; {\\n  const savedCb = useRef();\\n\\n  useEffect(() =&gt; {\\n    savedCb.current = cb;\\n  }, [cb]);\\n\\n  useEffect(() =&gt; {\\n    const interval = setInterval(() =&gt; {\\n      savedCb.current();\\n    }, delay);\\n\\n    return () =&gt; clearInterval(interval);\\n  }, [delay]);\\n};
               </code>
             </pre>
             <p>
@@ -672,13 +658,13 @@ const useMyHook = (cb, delay = 1000) =&gt; {
               </i>
                exerci 
               <span
-                style="background-color:hsl(60,75%,60%);"
+                style="\\"background-color:hsl(60,75%,60%);\\""
               >
                 dolores
               </span>
               , his no 
               <span
-                style="color:hsl(270,75%,60%);"
+                style="\\"color:hsl(270,75%,60%);\\""
               >
                 repudiare
               </span>
@@ -708,7 +694,7 @@ const useMyHook = (cb, delay = 1000) =&gt; {
               0
             </p>
             <p
-              style="text-align:center;"
+              style="\\"text-align:center;\\""
             >
               <strong>
                 Center: 
@@ -719,7 +705,7 @@ const useMyHook = (cb, delay = 1000) =&gt; {
               Fugit aliquip erroribus eu eam, an mel vidit doctus. Vis nobis veritus maluisset id, nonumy adversarium neglegentur est ut. Tation persius pri eu, modo minim fastidii mei no. Ad tota pertinax definiebas eam.
             </p>
             <p
-              style="text-align:right;"
+              style="\\"text-align:right;\\""
             >
               <strong>
                 Right:
@@ -730,7 +716,7 @@ const useMyHook = (cb, delay = 1000) =&gt; {
               Quod oblique mei ne, cetero delicatissimi sea cu, cu est harum dicit verterem. Tota forensibus ut usu, luptatum dignissim persecuti vel ex. Mea nostrud instructior cu, et referrentur theophrastus eum. Pro in iuvaret senserit. In persius explicari conceptam nec, in populo ponderum consequat vis. Gloriatur conclusionemque no qui, vitae nominati nec te, laoreet torquatos accommodare ex qui. Eu natum mediocritatem eos, cum ex alia oportere.
             </p>
             <p
-              style="text-align:justify;"
+              style="\\"text-align:justify;\\""
             >
               <strong>
                 Justify:
@@ -753,14 +739,17 @@ const useMyHook = (cb, delay = 1000) =&gt; {
               Now keep going…
             </p>
             <figure
-              class="image"
+              class="\\"image\\""
             >
               <a
-                href="https://gist.github.com/luizomf/e7cf0c3d172801225cce694681ecb0ad"
+                href="\\"https://gist.github.com/luizomf/e7cf0c3d172801225cce694681ecb0ad\\""
               >
                 <img
-                  alt="O alt text da imagem"
-                  src="https://res.cloudinary.com/dlizakp2a/image/upload/v1614696630/Frozen_sunset_on_the_lake_by_Manuel_Arslanyan_9f9cd8ea10.jpg"
+                  alt="\\"O"
+                  da=""
+                  imagem\\"=""
+                  src="\\"https://res.cloudinary.com/dlizakp2a/image/upload/v1614696630/Frozen_sunset_on_the_lake_by_Manuel_Arslanyan_9f9cd8ea10.jpg\\""
+                  text=""
                 />
               </a>
               <figcaption>
@@ -771,11 +760,15 @@ const useMyHook = (cb, delay = 1000) =&gt; {
               Munere euripidis an sed, usu ne consul soluta utamur. Bonorum equidem placerat eu cum, tantas quidam duo et. Pro soleat quaestio ne, ut nam wisi vocibus inciderint, ex his maiorum mnesarchum. Et est wisi primis, id vel odio alienum voluptatibus. Veri doctus offendit vim ea. Has nemore prompta inciderint ei, no sea expetendis dissentiet. Copiosae delicatissimi an sea, id cum agam clita nostro, tale tincidunt delicatissimi ei eos.
             </p>
             <figure
-              class="image image-style-side"
+              class="\\"image"
+              image-style-side\\"=""
             >
               <img
-                alt="Uma imagem à direita"
-                src="https://res.cloudinary.com/dlizakp2a/image/upload/v1614696630/Frozen_sunset_on_the_lake_by_Manuel_Arslanyan_9f9cd8ea10.jpg"
+                alt="\\"Uma"
+                direita\\"=""
+                imagem=""
+                src="\\"https://res.cloudinary.com/dlizakp2a/image/upload/v1614696630/Frozen_sunset_on_the_lake_by_Manuel_Arslanyan_9f9cd8ea10.jpg\\""
+                à=""
               />
               <figcaption>
                 Uma imagem à direita
@@ -852,7 +845,7 @@ const useMyHook = (cb, delay = 1000) =&gt; {
               A think that's it…
             </p>
             <figure
-              class="table"
+              class="\\"table\\""
             >
               <table>
                 <thead>
@@ -993,10 +986,10 @@ const useMyHook = (cb, delay = 1000) =&gt; {
               A video:
             </p>
             <figure
-              class="media"
+              class="\\"media\\""
             >
               <oembed
-                url="https://www.youtube.com/watch?v=oLmRV25eQvo"
+                url="\\"https://www.youtube.com/watch?v=oLmRV25eQvo\\""
               />
             </figure>
             <p>
@@ -1014,18 +1007,18 @@ const useMyHook = (cb, delay = 1000) =&gt; {
           tags:
           <span>
             <a
-              href="/tags/use-effect"
+              href="/tags/react"
               style="text-decoration: none;"
             >
-              useEffect
+              React
             </a>
           </span>
           <span>
             <a
-              href="/tags/use-state"
+              href="/tags/java-script"
               style="text-decoration: none;"
             >
-              useState
+              JavaScript
             </a>
           </span>
         </p>
@@ -1040,7 +1033,7 @@ const useMyHook = (cb, delay = 1000) =&gt; {
         <div
           class="c22"
         >
-          meu footer de boas na lagoa
+          meu footer
         </div>
       </footer>
     </div>

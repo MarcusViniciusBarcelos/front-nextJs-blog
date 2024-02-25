@@ -200,17 +200,17 @@ exports[`<Post /> should render header, excerpt, cover, metadata and post 1`] =
         <h1
           class="c2 c3"
         >
-          receitinha
+          Desbravando Novos Horizontes: Elden Ring Revelado
         </h1>
         <p
           class="c4"
         >
-          uma receita qualquer 
+          Prepare-se para uma nova jornada em Elden Ring, onde os limites do mundo são desafiados e novos horizontes são descobertos.
         </p>
         <img
-          alt="receitinha"
+          alt="Desbravando Novos Horizontes: Elden Ring Revelado"
           class="c5"
-          src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708022644/react_9bb785764c.png"
+          src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708548805/homem_aranha_apontando_og_f5bff531dd.webp"
         />
         <div
           class="c6"
@@ -233,9 +233,9 @@ exports[`<Post /> should render header, excerpt, cover, metadata and post 1`] =
               Em 
             </span>
             <time
-              datetime="2020-04-20"
+              datetime="2024-02-21T20:54:59.282Z"
             >
-              19 de abr. de 2020
+              21 de fev. de 2024
             </time>
             <span
               class="separator"
@@ -248,9 +248,9 @@ exports[`<Post /> should render header, excerpt, cover, metadata and post 1`] =
               Categorias:
               <span>
                 <a
-                  href="/category/python"
+                  href="/category/artigos"
                 >
-                  Python
+                  Artigos
                 </a>
               </span>
             </span>
@@ -264,10 +264,12 @@ exports[`<Post /> should render header, excerpt, cover, metadata and post 1`] =
       <div
         class="c8"
       >
-        uma receita maior 
-## oooooii
-
-[link do meu git](https://www.linkedin.com/in/marcusviniciusbarcelos/)
+        <p>
+          Elden Ring está de volta com uma nova aventura que promete desafiar até mesmo os jogadores mais experientes. Com um vasto mundo aberto para explorar, criaturas colossais para enfrentar e mistérios para desvendar, esta é a sua chance de desbravar novos horizontes e descobrir o que aguarda além dos limites conhecidos.
+        </p>
+        <p>
+          Prepare sua espada, fortaleça sua determinação e embarque nesta jornada épica em busca de glória, poder e redenção. Elden Ring espera por você - você tem a coragem necessária para enfrentar o desconhecido?
+        </p>
       </div>
     </div>
   </article>

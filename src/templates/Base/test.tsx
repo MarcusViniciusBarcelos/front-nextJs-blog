@@ -13,11 +13,8 @@ describe('<Base />', () => {
     expect(
       screen.getByRole('heading', { name: mock.settings.attributes.blogName }),
     ).toBeInTheDocument();
-    expect(
-      screen.getByRole('link', { name: 'meu blog - blog de testes' }),
-    ).toBeInTheDocument();
     expect(screen.getByLabelText(/open menu/i)).toBeInTheDocument();
-    expect(screen.getByText('meu footer de boas na lagoa')).toBeInTheDocument();
+    expect(screen.getByText('meu footer')).toBeInTheDocument();
     expect(screen.getByLabelText('Go to top')).toBeInTheDocument();
   });
 

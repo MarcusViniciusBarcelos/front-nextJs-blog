@@ -41,28 +41,28 @@ exports[`<PostCard /> should match snapshot 1`] = `
     class="c0"
   >
     <a
-      href="/post/receitinha"
+      href="/post/desbravando-novos-horizontes-elden-ring-revelado"
     >
       <img
-        alt="receitinha"
+        alt="Desbravando Novos Horizontes: Elden Ring Revelado"
         class="c1"
-        src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708022644/react_9bb785764c.png"
+        src="https://res.cloudinary.com/dm5kvicsz/image/upload/v1708548805/homem_aranha_apontando_og_f5bff531dd.webp"
       />
     </a>
     <a
-      href="/post/receitinha"
+      href="/post/desbravando-novos-horizontes-elden-ring-revelado"
       style="text-decoration: none;"
     >
       <h2
         class="c2 c3"
       >
-        receitinha
+        Desbravando Novos Horizontes: Elden Ring Revelado
       </h2>
     </a>
     <p
       class="c4"
     >
-      uma receita qualquer 
+      Prepare-se para uma nova jornada em Elden Ring, onde os limites do mundo são desafiados e novos horizontes são descobertos.
     </p>
   </div>
 </div>
