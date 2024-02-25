@@ -4,7 +4,7 @@ import { data } from '../../api/dados.json';
 const postData = data.posts.data[1];
 
 const mockArticleMetaData: ArticleMetaProps = {
-  createdAt: postData.createdAt,
+  createdAt: postData.attributes.createdAt,
   author: {
     id: postData.attributes.author.data.id,
     attributes: {

@@ -20,7 +20,7 @@ const mockPostData: PostProps = {
   })),
   content: postData.content,
   cover: postData.cover.data.attributes.url,
-  createdAt: data.posts.data[1].createdAt,
+  createdAt: data.posts.data[1].attributes.createdAt,
   id: data.posts.data[1].id,
   excerpt: postData.excerpt,
   title: postData.title,

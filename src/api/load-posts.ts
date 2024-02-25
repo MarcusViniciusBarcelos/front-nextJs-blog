@@ -21,7 +21,7 @@ export type StrapiPostsAndSettings = {
     data: SettingsStrapi;
   };
   posts: {
-    data: PostCardProps[];
+    data: PostStrapi[];
   };
 };
 

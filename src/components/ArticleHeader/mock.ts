@@ -6,7 +6,7 @@ const postData = data.posts.data;
 const mockArticleHeaderData: ArticleHeaderProps = {
   title: postData[0].attributes.title,
   id: postData[0].id,
-  createdAt: postData[0].createdAt,
+  createdAt: postData[0].attributes.createdAt,
   excerpt: postData[0].attributes.excerpt,
   categories: postData[0].attributes.categories.data.map((category) => ({
     id: category.id,

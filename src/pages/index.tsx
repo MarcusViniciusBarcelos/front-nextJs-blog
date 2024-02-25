@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import { loadPosts, StrapiPostsAndSettings } from '../api/load-posts';
 import { PostsTemplate } from '../templates/PostsTemplate';
+import { ArticleHeader } from '../components/ArticleHeader';
+import { ArticleMeta } from '../components/ArticleMeta';
 
 export default function Index({ setting, posts }: StrapiPostsAndSettings) {
   return (
@@ -12,8 +14,30 @@ export default function Index({ setting, posts }: StrapiPostsAndSettings) {
           content={setting.data.attributes.blogDescription}
         />
       </Head>
-      {console.log(setting.data)}
-      <PostsTemplate posts={posts.data} settings={setting.data} />
+      {console.log(setting)}
+      <PostsTemplate
+        posts={posts.data.map((post) => ({
+          id: post.id,
+          title: post.attributes.title,
+          excerpt: post.attributes.excerpt,
+          createdAt: post.attributes.createdAt,
+          cover: post.attributes.cover.data.attributes.url,
+          slug: post.attributes.slug,
+          categories: post.attributes.categories.data.map((category) => ({
+            id: category.id,
+            attributes: {
+              displayName: category.attributes.displayName,
+              slug: category.attributes.slug,
+            },
+          })),
+        }))}
+        settings={setting.data}
+      />
+      <ArticleMeta
+        createdAt={posts.data[0].attributes.createdAt}
+        author={posts.data[0].attributes.author.data}
+        categories={posts.data[0].attributes.categories.data}
+      />
     </>
   );
 }

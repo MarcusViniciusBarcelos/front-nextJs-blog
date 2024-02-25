@@ -25,7 +25,7 @@ const mockTemplateData: PostsTemplateProps = {
         newTab: link.newTab,
         text: link.text,
       })),
-      text: baseData.text[0].children[0].text,
+      footer: baseData.footer,
     },
   },
   posts: postData.map((post) => ({
