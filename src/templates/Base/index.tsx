@@ -30,6 +30,15 @@ export const BaseTemplate = ({ settings, children }: BaseTemplateProps) => {
           logo={settings.attributes.logo.data.attributes.url}
         />
       </Styled.HeaderContainer>
+      <Styled.SearchContainer>
+        <form action="/search/" method="GET">
+          <Styled.SearchInput
+            type="search"
+            placeholder="Encontre posts"
+            name="q"
+          />
+        </form>
+      </Styled.SearchContainer>
 
       <Styled.ContentContainer>{children}</Styled.ContentContainer>
 
