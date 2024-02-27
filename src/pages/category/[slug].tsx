@@ -1,17 +1,28 @@
 import Head from 'next/head';
-import { loadPosts, StrapiPostsAndSettings } from '../api/load-posts';
-import { PostsTemplate } from '../templates/PostsTemplate';
-import { ArticleMeta } from '../components/ArticleMeta';
+import { StrapiPostsAndSettings, loadPosts } from '../../api/load-posts';
+import { useRouter } from 'next/router';
+import { PostsTemplate } from '../../templates/PostsTemplate';
 
-export default function Index({ setting, posts }: StrapiPostsAndSettings) {
+export default function CategoryPage({
+  posts,
+  setting,
+}: StrapiPostsAndSettings) {
+  const router = useRouter();
+
+  if (router.isFallback) {
+    return <div>Loading...</div>;
+  }
+
+  const CategoryName = posts.data[0].attributes.categories.data.filter(
+    (category) => category.attributes.slug === router.query.slug,
+  )[0].attributes.displayName;
+
   return (
     <>
       <Head>
-        <title>{setting.data.attributes.blogName}</title>
-        <meta
-          name="description"
-          content={setting.data.attributes.blogDescription}
-        />
+        <title>
+          Category: {CategoryName} - {setting.data.attributes.blogName}
+        </title>
       </Head>
       <PostsTemplate
         posts={posts.data.map((post) => ({
@@ -35,9 +46,18 @@ export default function Index({ setting, posts }: StrapiPostsAndSettings) {
   );
 }
 
-export async function getStaticProps() {
+export async function getStaticPaths() {
+  return {
+    paths: [],
+    fallback: true,
+  };
+}
+
+export async function getStaticProps(ctx) {
   try {
-    const data: StrapiPostsAndSettings = await loadPosts();
+    const data: StrapiPostsAndSettings = await loadPosts({
+      categorySlug: ctx.params.slug as string,
+    });
     if (!data || !data.posts || !data.setting) {
       return {
         notFound: true,

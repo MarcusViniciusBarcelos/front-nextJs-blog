@@ -1,4 +1,3 @@
-import { GetStaticPaths } from 'next';
 import Head from 'next/head';
 import { StrapiPostsAndSettings, loadPosts } from '../../api/load-posts';
 import { useRouter } from 'next/router';
