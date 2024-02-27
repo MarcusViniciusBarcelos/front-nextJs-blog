@@ -52,6 +52,7 @@ export const GRAPHQL_FRAGMENTS = gql`
       excerpt
       content
       allowComments
+      createdAt
       cover {
         data {
           ...cover
