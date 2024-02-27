@@ -1,11 +1,16 @@
 import Head from 'next/head';
-import { StrapiPostsAndSettings, loadPosts } from '../../api/load-posts';
+import {
+  StrapiPostsAndSettings,
+  defaultLoadPostsVariables,
+  loadPosts,
+} from '../../api/load-posts';
 import { useRouter } from 'next/router';
 import { PostsTemplate } from '../../templates/PostsTemplate';
 
 export default function CategoryPage({
   posts,
   setting,
+  variables,
 }: StrapiPostsAndSettings) {
   const router = useRouter();
 
@@ -41,6 +46,7 @@ export default function CategoryPage({
           })),
         }))}
         settings={setting.data}
+        variables={variables}
       />
     </>
   );
@@ -54,10 +60,9 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(ctx) {
+  const variables = { categorySlug: ctx.params.slug as string };
   try {
-    const data: StrapiPostsAndSettings = await loadPosts({
-      categorySlug: ctx.params.slug as string,
-    });
+    const data: StrapiPostsAndSettings = await loadPosts(variables);
     if (!data || !data.posts || !data.setting) {
       return {
         notFound: true,
@@ -67,6 +72,10 @@ export async function getStaticProps(ctx) {
       props: {
         setting: data.setting,
         posts: data.posts,
+        variables: {
+          ...defaultLoadPostsVariables,
+          ...variables,
+        },
       },
       revalidate: 24 * 60 * 60,
     };
