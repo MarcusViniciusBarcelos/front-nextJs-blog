@@ -46,11 +46,6 @@ export default function SearchPage({
 
 export async function getServerSideProps(ctx) {
   const query = ctx.query.q || '';
-  if (!query) {
-    return {
-      notFound: true,
-    };
-  }
   const variables = { postSearch: query as string };
   try {
     const data: StrapiPostsAndSettings = await loadPosts(variables);

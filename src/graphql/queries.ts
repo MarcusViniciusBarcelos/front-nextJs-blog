@@ -24,7 +24,7 @@ export const GRAPHQL_QUERIES = gql`
       sort: $sort
       filters: {
         slug: { eq: $postSlug }
-        title: { contains: $postSearch }
+        title: { containsi: $postSearch }
         categories: { slug: { eq: $categorySlug } }
         author: { slug: { eq: $authorSlug } }
         tags: { slug: { eq: $tagSlug } }

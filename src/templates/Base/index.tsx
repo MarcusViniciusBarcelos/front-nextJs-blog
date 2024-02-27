@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import { Footer } from '../../components/Footer';
 import { GoTop } from '../../components/GoTop';
 import { Header } from '../../components/Header';
@@ -11,6 +12,7 @@ export type BaseTemplateProps = {
 };
 
 export const BaseTemplate = ({ settings, children }: BaseTemplateProps) => {
+  const router = useRouter();
   return (
     <Styled.Wrapper>
       <Menu
@@ -36,6 +38,7 @@ export const BaseTemplate = ({ settings, children }: BaseTemplateProps) => {
             type="search"
             placeholder="Encontre posts"
             name="q"
+            defaultValue={router.query.q}
           />
         </form>
       </Styled.SearchContainer>
