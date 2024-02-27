@@ -1,3 +1,4 @@
+import { StrapiImage } from '../../shared-types/strapi-image';
 import { PostTag } from '../../shared-types/tag';
 import { ArticleHeader, ArticleHeaderProps } from '../ArticleHeader';
 import { HtmlContent } from '../HtmlContent';

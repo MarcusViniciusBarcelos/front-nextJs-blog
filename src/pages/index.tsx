@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import { loadPosts, StrapiPostsAndSettings } from '../api/load-posts';
 import { PostsTemplate } from '../templates/PostsTemplate';
-import { ArticleHeader } from '../components/ArticleHeader';
 import { ArticleMeta } from '../components/ArticleMeta';
 
 export default function Index({ setting, posts }: StrapiPostsAndSettings) {
@@ -14,7 +13,6 @@ export default function Index({ setting, posts }: StrapiPostsAndSettings) {
           content={setting.data.attributes.blogDescription}
         />
       </Head>
-      {console.log(setting)}
       <PostsTemplate
         posts={posts.data.map((post) => ({
           id: post.id,
@@ -45,9 +43,17 @@ export default function Index({ setting, posts }: StrapiPostsAndSettings) {
 export async function getStaticProps() {
   try {
     const data: StrapiPostsAndSettings = await loadPosts();
-    console.log(data);
+    if (!data || !data.posts || !data.setting) {
+      return {
+        notFound: true,
+      };
+    }
     return {
-      props: { setting: data.setting, posts: data.posts },
+      props: {
+        setting: data.setting,
+        posts: data.posts,
+      },
+      revalidate: 24 * 60 * 60,
     };
   } catch (err) {
     console.error('Erro ao buscar os dados:', err);

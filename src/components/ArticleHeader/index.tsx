@@ -8,7 +8,7 @@ import * as Styled from './styles';
 export type ArticleHeaderProps = {
   title: string;
   excerpt: string;
-  cover: string;
+  cover: StrapiImage;
   categories: Category[];
   createdAt: string;
   author: Author;
@@ -27,7 +27,7 @@ export const ArticleHeader = ({
     <Styled.Wrapper>
       <Heading size="big">{title}</Heading>
       <Styled.Excerpt>{excerpt}</Styled.Excerpt>
-      <Styled.Cover src={cover} alt={title} />
+      <Styled.Cover src={cover.attributes.url} alt={title} />
       <ArticleMeta
         categories={categories}
         author={author}
