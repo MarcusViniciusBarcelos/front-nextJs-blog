@@ -28,6 +28,8 @@ const mockPostData: PostProps = {
   },
   createdAt: data.posts.data[1].attributes.createdAt,
   id: data.posts.data[1].id,
+  slug: data.posts.data[1].attributes.slug,
+  allowComments: postData.allowComments,
   excerpt: postData.excerpt,
   title: postData.title,
   tags: postData.tags.data.map((tag) => ({

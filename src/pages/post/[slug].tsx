@@ -20,10 +20,12 @@ export default function PostPage({ posts, setting }: StrapiPostsAndSettings) {
       <PostTemplate
         post={{
           id: postId.id,
+          slug: post.slug,
           title: post.title,
           excerpt: post.excerpt,
           content: post.content,
           createdAt: post.createdAt,
+          allowComments: post.allowComments,
           cover: {
             id: post.cover.data.id,
             attributes: {

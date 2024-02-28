@@ -31,6 +31,8 @@ const mockTemplateData: PostTemplateProps = {
   },
   post: {
     id: postData.id,
+    slug: postData.attributes.slug,
+    allowComments: postData.attributes.allowComments,
     createdAt: postData.attributes.createdAt,
     title: postData.attributes.title,
     content: postData.attributes.content,

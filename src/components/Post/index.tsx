@@ -8,6 +8,8 @@ import * as Styled from './styles';
 export type PostProps = ArticleHeaderProps & {
   content: string;
   id: string;
+  slug: string;
+  allowComments: boolean;
   tags: PostTag[];
 };
 
