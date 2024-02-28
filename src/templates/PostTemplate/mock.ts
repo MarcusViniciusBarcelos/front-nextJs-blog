@@ -34,7 +34,14 @@ const mockTemplateData: PostTemplateProps = {
     createdAt: postData.attributes.createdAt,
     title: postData.attributes.title,
     content: postData.attributes.content,
-    cover: postData.attributes.cover.data.attributes.url,
+    cover: {
+      id: postData.attributes.cover.data.id,
+      attributes: {
+        alternativeText:
+          postData.attributes.cover.data.attributes.alternativeText,
+        url: postData.attributes.cover.data.attributes.url,
+      },
+    },
     categories: postData.attributes.categories.data.map((category) => ({
       id: category.id,
       attributes: {

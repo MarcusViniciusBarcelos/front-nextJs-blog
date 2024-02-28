@@ -5,7 +5,6 @@ import {
   StrapiPostsAndSettings,
 } from '../api/load-posts';
 import { PostsTemplate } from '../templates/PostsTemplate';
-import { ArticleMeta } from '../components/ArticleMeta';
 
 export default function Index({
   setting,

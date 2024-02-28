@@ -22,7 +22,14 @@ const mockArticleHeaderData: ArticleHeaderProps = {
       slug: postData[0].attributes.author.data.attributes.slug,
     },
   },
-  cover: postData[0].attributes.cover.data.attributes.url,
+  cover: {
+    id: postData[0].attributes.cover.data.id,
+    attributes: {
+      url: postData[0].attributes.cover.data.attributes.url,
+      alternativeText:
+        postData[0].attributes.cover.data.attributes.alternativeText,
+    },
+  },
 };
 
 export default mockArticleHeaderData;
