@@ -5,6 +5,7 @@ import { Header } from '../../components/Header';
 import { Menu } from '../../components/Menu';
 import { SettingsStrapi } from '../../shared-types/settings-strapi';
 import * as Styled from './styles';
+import { ToggleTheme } from '../../components/ToggleTheme';
 
 export type BaseTemplateProps = {
   settings: SettingsStrapi;
@@ -15,6 +16,7 @@ export const BaseTemplate = ({ settings, children }: BaseTemplateProps) => {
   const router = useRouter();
   return (
     <Styled.Wrapper>
+      <ToggleTheme />
       <Menu
         links={settings.attributes.menuLink.map((link) => ({
           id: link.id,
@@ -38,7 +40,7 @@ export const BaseTemplate = ({ settings, children }: BaseTemplateProps) => {
             type="search"
             placeholder="Encontre posts"
             name="q"
-            defaultValue={router.query.q}
+            defaultValue={router?.query?.q || ''}
           />
         </form>
       </Styled.SearchContainer>
