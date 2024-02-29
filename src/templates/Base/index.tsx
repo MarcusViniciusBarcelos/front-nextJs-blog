@@ -58,6 +58,7 @@ export const BaseTemplate = ({ settings, children }: BaseTemplateProps) => {
       setIsReady(true);
       router.push('/');
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchValue]);
 
   const handleInputChange = (event) => {
