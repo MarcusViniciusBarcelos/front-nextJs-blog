@@ -8,6 +8,7 @@ module.exports = {
     '!<rootDir>/src/styles/**/*.{js,jsx,ts,tsx}',
     '!<rootDir>/src/templates/**/*.{js,jsx,ts,tsx}',
     '!<rootDir>/src/components/Comments/**/*.{js,jsx,ts,tsx}',
+    '!<rootDir>/src/components/ToggleTheme/**/*.{js,jsx,ts,tsx}',
     '!<rootDir>/src/contexts/**/*.{js,jsx,ts,tsx}',
     '!<rootDir>/src/shared-types/**/*.{js,jsx,ts,tsx}',
     '!<rootDir>/src/config/**/*.{js,jsx,ts,tsx}',

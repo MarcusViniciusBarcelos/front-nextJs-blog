@@ -1,4 +1,4 @@
-import { use, useContext, useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import * as Styled from './styles';
 import DarkModeToggle from 'react-dark-mode-toggle';
 import { BlogThemeContext } from '../../contexts/BlogThemeContext';
