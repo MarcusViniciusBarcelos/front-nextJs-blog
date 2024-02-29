@@ -55,110 +55,359 @@ exports[`<Post /> should render header, excerpt, cover, metadata and post 1`] =
   margin-bottom: 2.4rem;
 }
 
-.c8 {
+.c9 {
   font-size: calc(1.6rem + 0.2rem);
   line-height: 1.5;
 }
 
-.c8 p {
+.c9 p {
   margin: 2.4rem 0;
 }
 
-.c8 a,
-.c8 a:visited,
-.c8 a:link {
+.c9 a,
+.c9 a:visited,
+.c9 a:link {
   color: #dc143c;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
 
-.c8 a:hover {
+.c9 a:hover {
   filter: brightness(0.8);
 }
 
-.c8 code {
-  font-family: monospace;
-  color: #dc143c;
-  font-size: 1.6rem;
-  background: #DDDDDD;
-  padding: 0.2rem;
-  margin: 0.2rem;
-}
-
-.c8 pre {
-  background: #000000;
-  padding: 2.4rem;
-  font-family: monospace;
-  color: #FFFFFF;
-  margin: 2.4rem 0;
-  overflow-x: auto;
-  width: 100%;
-  font-size: 1.6rem;
-}
-
-.c8 pre code {
-  color: inherit;
-  background: inherit;
-}
-
-.c8 img {
+.c9 img {
   max-width: 100%;
 }
 
-.c8 .image {
+.c9 .image {
   background: #DDDDDD;
   line-height: 0;
   margin: 2.4rem 0;
 }
 
-.c8 .image figcaption {
+.c9 .image figcaption {
   font-size: 1.6rem;
   padding: 1.6rem;
   text-align: center;
   line-height: 1.3;
 }
 
-.c8 .image-style-side {
+.c9 .image-style-side {
   max-width: 50%;
   float: right;
   margin: 2.4rem 0;
 }
 
-.c8 hr {
+.c9 hr {
   border: none;
   border-bottom: 0.1rem solid #DDDDDD;
 }
 
-.c8 ul,
-.c8 ol {
+.c9 ul,
+.c9 ol {
   margin: 2.4rem 4.0rem;
 }
 
-.c8 .table {
+.c9 .table {
   width: 100%;
   overflow: hidden;
   overflow-x: auto;
   margin: 2.4rem 0;
 }
 
-.c8 table {
+.c9 table {
   width: 100%;
   border-collapse: collapse;
 }
 
-.c8 table td,
-.c8 table th {
+.c9 table td,
+.c9 table th {
   padding: 1.6rem;
   border: 0.1rem solid #DDDDDD;
 }
 
-.c8 blockquote {
+.c9 blockquote {
   border-left: 0.5rem solid #dc143c;
   color: #aaaaaa;
   filter: brightness(80%);
   padding-left: 2.4rem;
   font-style: italic;
   margin: 2.4rem;
+}
+
+.c8 pre[class*='language-'],
+.c8 code[class*='language-'] {
+  color: #d4d4d4;
+  font-size: 13px;
+  text-shadow: none;
+  font-family: Menlo,Monaco,Consolas,'Andale Mono','Ubuntu Mono','Courier New',monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+.c8 pre[class*='language-']::selection,
+.c8 code[class*='language-']::selection,
+.c8 pre[class*='language-'] *::selection,
+.c8 code[class*='language-'] *::selection {
+  text-shadow: none;
+  background: #75a7ca;
+}
+
+.c8 pre[class*='language-'] {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+  background: #1e1e1e;
+}
+
+.c8 :not(pre)>code[class*='language-'] {
+  padding: 0.1em 0.3em;
+  border-radius: 0.3em;
+  color: #db4c69;
+  background: #f9f2f4;
+}
+
+.c8 .namespace {
+  opacity: 0.7;
+}
+
+.c8 .token.doctype .token.doctype-tag {
+  color: #569cd6;
+}
+
+.c8 .token.doctype .token.name {
+  color: #9cdcfe;
+}
+
+.c8 .token.comment,
+.c8 .token.prolog {
+  color: #6a9955;
+}
+
+.c8 .token.punctuation,
+.c8 .language-html .language-css .token.punctuation,
+.c8 .language-html .language-javascript .token.punctuation {
+  color: #d4d4d4;
+}
+
+.c8 .token.property,
+.c8 .token.tag,
+.c8 .token.boolean,
+.c8 .token.number,
+.c8 .token.constant,
+.c8 .token.symbol,
+.c8 .token.inserted,
+.c8 .token.unit {
+  color: #b5cea8;
+}
+
+.c8 .token.selector,
+.c8 .token.attr-name,
+.c8 .token.string,
+.c8 .token.char,
+.c8 .token.builtin,
+.c8 .token.deleted {
+  color: #ce9178;
+}
+
+.c8 .language-css .token.string.url {
+  text-decoration: underline;
+}
+
+.c8 .token.operator,
+.c8 .token.entity {
+  color: #d4d4d4;
+}
+
+.c8 .token.operator.arrow {
+  color: #569cd6;
+}
+
+.c8 .token.atrule {
+  color: #ce9178;
+}
+
+.c8 .token.atrule .token.rule {
+  color: #c586c0;
+}
+
+.c8 .token.atrule .token.url {
+  color: #9cdcfe;
+}
+
+.c8 .token.atrule .token.url .token.function {
+  color: #dcdcaa;
+}
+
+.c8 .token.atrule .token.url .token.punctuation {
+  color: #d4d4d4;
+}
+
+.c8 .token.keyword {
+  color: #569cd6;
+}
+
+.c8 .token.keyword.module,
+.c8 .token.keyword.control-flow {
+  color: #c586c0;
+}
+
+.c8 .token.function,
+.c8 .token.function .token.maybe-class-name {
+  color: #dcdcaa;
+}
+
+.c8 .token.regex {
+  color: #d16969;
+}
+
+.c8 .token.important {
+  color: #569cd6;
+}
+
+.c8 .token.italic {
+  font-style: italic;
+}
+
+.c8 .token.constant {
+  color: #9cdcfe;
+}
+
+.c8 .token.class-name,
+.c8 .token.maybe-class-name {
+  color: #4ec9b0;
+}
+
+.c8 .token.console {
+  color: #9cdcfe;
+}
+
+.c8 .token.parameter {
+  color: #9cdcfe;
+}
+
+.c8 .token.interpolation {
+  color: #9cdcfe;
+}
+
+.c8 .token.punctuation.interpolation-punctuation {
+  color: #569cd6;
+}
+
+.c8 .token.boolean {
+  color: #569cd6;
+}
+
+.c8 .token.property,
+.c8 .token.variable,
+.c8 .token.imports .token.maybe-class-name,
+.c8 .token.exports .token.maybe-class-name {
+  color: #9cdcfe;
+}
+
+.c8 .token.selector {
+  color: #d7ba7d;
+}
+
+.c8 .token.escape {
+  color: #d7ba7d;
+}
+
+.c8 .token.tag {
+  color: #569cd6;
+}
+
+.c8 .token.tag .token.punctuation {
+  color: #808080;
+}
+
+.c8 .token.cdata {
+  color: #808080;
+}
+
+.c8 .token.attr-name {
+  color: #9cdcfe;
+}
+
+.c8 .token.attr-value,
+.c8 .token.attr-value .token.punctuation {
+  color: #ce9178;
+}
+
+.c8 .token.attr-value .token.punctuation.attr-equals {
+  color: #d4d4d4;
+}
+
+.c8 .token.entity {
+  color: #569cd6;
+}
+
+.c8 .token.namespace {
+  color: #4ec9b0;
+}
+
+.c8 pre[class*='language-javascript'],
+.c8 code[class*='language-javascript'],
+.c8 pre[class*='language-jsx'],
+.c8 code[class*='language-jsx'],
+.c8 pre[class*='language-typescript'],
+.c8 code[class*='language-typescript'],
+.c8 pre[class*='language-tsx'],
+.c8 code[class*='language-tsx'] {
+  color: #9cdcfe;
+}
+
+.c8 pre[class*='language-css'],
+.c8 code[class*='language-css'] {
+  color: #ce9178;
+}
+
+.c8 pre[class*='language-html'],
+.c8 code[class*='language-html'] {
+  color: #d4d4d4;
+}
+
+.c8 .language-regex .token.anchor {
+  color: #dcdcaa;
+}
+
+.c8 .language-html .token.punctuation {
+  color: #808080;
+}
+
+.c8 pre[data-line] {
+  position: relative;
+}
+
+.c8 pre[class*='language-']>code[class*='language-'] {
+  position: relative;
+  z-index: 1;
+}
+
+.c8 .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: #f7ebc6;
+  box-shadow: inset 5px 0 0 #f7d87c;
+  z-index: 0;
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
 }
 
 .c0 {
@@ -176,14 +425,21 @@ exports[`<Post /> should render header, excerpt, cover, metadata and post 1`] =
 }
 
 @media (max-width: 768px) {
-  .c8 {
+  .c9 {
     font-size: 2rem;
   }
 
-  .c8 .image-style-side {
+  .c9 .image-style-side {
     max-width: 100%;
     float: none;
     margin: 2.4rem;
+  }
+}
+
+@media print {
+  .c8 pre[class*='language-'],
+  .c8 code[class*='language-'] {
+    text-shadow: none;
   }
 }
 
@@ -264,12 +520,17 @@ exports[`<Post /> should render header, excerpt, cover, metadata and post 1`] =
       <div
         class="c8"
       >
-        <p>
-          Elden Ring está de volta com uma nova aventura que promete desafiar até mesmo os jogadores mais experientes. Com um vasto mundo aberto para explorar, criaturas colossais para enfrentar e mistérios para desvendar, esta é a sua chance de desbravar novos horizontes e descobrir o que aguarda além dos limites conhecidos.
-        </p>
-        <p>
-          Prepare sua espada, fortaleça sua determinação e embarque nesta jornada épica em busca de glória, poder e redenção. Elden Ring espera por você - você tem a coragem necessária para enfrentar o desconhecido?
-        </p>
+        <div
+          class="c9"
+        >
+          <p>
+            Elden Ring está de volta com uma nova aventura que promete desafiar até mesmo os jogadores mais experientes. Com um vasto mundo aberto para explorar, criaturas colossais para enfrentar e mistérios para desvendar, esta é a sua chance de desbravar novos horizontes e descobrir o que aguarda além dos limites conhecidos.
+          </p>
+          <p>
+            Prepare sua espada, fortaleça sua determinação e embarque nesta jornada épica em busca de glória, poder e redenção. Elden Ring espera por você - você tem a coragem necessária para enfrentar o desconhecido?
+          </p>
+        </div>
+         
       </div>
     </div>
   </article>

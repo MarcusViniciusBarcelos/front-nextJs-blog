@@ -76,7 +76,7 @@ export async function getStaticProps(ctx) {
           ...variables,
         },
       },
-      revalidate: 24 * 60 * 60,
+      revalidate: 60,
     };
   } catch (err) {
     console.error('Erro ao buscar os dados:', err);

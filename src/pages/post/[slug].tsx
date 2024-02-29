@@ -99,7 +99,7 @@ export async function getStaticProps(ctx) {
         setting: data.setting,
         posts: data.posts,
       },
-      revalidate: 24 * 60 * 60,
+      revalidate: 60,
     };
   } catch (err) {
     console.error('Erro ao buscar os dados:', err);

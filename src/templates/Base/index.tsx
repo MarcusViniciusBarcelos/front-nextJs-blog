@@ -52,15 +52,6 @@ export const BaseTemplate = ({ settings, children }: BaseTemplateProps) => {
     };
   }, [searchValue, router]);
 
-  useEffect(() => {
-    // Verifica se o campo de pesquisa está vazio para retornar todos os posts
-    if (searchValue === '') {
-      setIsReady(true);
-      router.push('/');
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [searchValue]);
-
   const handleInputChange = (event) => {
     setSearchValue(event.target.value);
   };
