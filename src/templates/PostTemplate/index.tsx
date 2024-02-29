@@ -25,7 +25,6 @@ export const PostTemplate = ({ settings, post }: PostTemplateProps) => {
           allowComments={post.allowComments}
         />
       </BaseTemplate>
-      {console.log(post)}
     </>
   );
 };
