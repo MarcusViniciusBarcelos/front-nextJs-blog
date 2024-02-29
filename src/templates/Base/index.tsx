@@ -6,6 +6,9 @@ import { Menu } from '../../components/Menu';
 import { SettingsStrapi } from '../../shared-types/settings-strapi';
 import * as Styled from './styles';
 import { ToggleTheme } from '../../components/ToggleTheme';
+import { useEffect, useRef, useState } from 'react';
+import { Cancel } from '@styled-icons/material-outlined';
+import { CheckCircleOutline } from '@styled-icons/material-outlined/CheckCircleOutline';
 
 export type BaseTemplateProps = {
   settings: SettingsStrapi;
@@ -14,6 +17,53 @@ export type BaseTemplateProps = {
 
 export const BaseTemplate = ({ settings, children }: BaseTemplateProps) => {
   const router = useRouter();
+  const [searchValue, setSearchValue] = useState(router?.query?.q || '');
+  const [searchDisabled, setSearchDisabled] = useState(true);
+  const [isReady, setIsReady] = useState(true);
+  const imputTimeout = useRef(null);
+
+  useEffect(() => {
+    isReady ? setSearchDisabled(false) : setSearchDisabled(true);
+  }, [isReady]);
+
+  useEffect(() => {
+    clearTimeout(imputTimeout.current);
+
+    if (router?.query?.q === searchValue) return;
+
+    const q = searchValue;
+
+    if (!q || q.length < 3) {
+      return;
+    }
+
+    imputTimeout.current = setTimeout(() => {
+      setIsReady(false);
+      router
+        .push({
+          pathname: '/search',
+          query: { q: searchValue },
+        })
+        .then(() => setIsReady(true));
+    }, 600);
+
+    return () => {
+      clearTimeout(imputTimeout.current);
+    };
+  }, [searchValue, router]);
+
+  useEffect(() => {
+    // Verifica se o campo de pesquisa está vazio para retornar todos os posts
+    if (searchValue === '') {
+      setIsReady(true);
+      router.push('/');
+    }
+  }, [searchValue]);
+
+  const handleInputChange = (event) => {
+    setSearchValue(event.target.value);
+  };
+
   return (
     <Styled.Wrapper>
       <ToggleTheme />
@@ -35,14 +85,22 @@ export const BaseTemplate = ({ settings, children }: BaseTemplateProps) => {
         />
       </Styled.HeaderContainer>
       <Styled.SearchContainer>
-        <form action="/search/" method="GET">
-          <Styled.SearchInput
-            type="search"
-            placeholder="Encontre posts"
-            name="q"
-            defaultValue={router?.query?.q || ''}
+        <Styled.SearchInput
+          type="search"
+          placeholder="Encontre posts"
+          name="q"
+          value={searchValue}
+          onChange={handleInputChange}
+          disabled={searchDisabled}
+        />
+        {searchDisabled ? (
+          <Cancel className="search-cancel-icon" aria-label="input disabled" />
+        ) : (
+          <CheckCircleOutline
+            className="search-ok-icon"
+            aria-label="input enabled"
           />
-        </form>
+        )}
       </Styled.SearchContainer>
 
       <Styled.ContentContainer>{children}</Styled.ContentContainer>

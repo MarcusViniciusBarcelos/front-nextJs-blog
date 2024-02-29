@@ -1,3 +1,4 @@
+import { Excerpt } from './../components/ArticleHeader/styles';
 import { gql } from 'graphql-request';
 import { GRAPHQL_FRAGMENTS } from './fragments';
 
@@ -23,8 +24,12 @@ export const GRAPHQL_QUERIES = gql`
       pagination: { start: $start, limit: $limit }
       sort: $sort
       filters: {
+        or: [
+          { title: { containsi: $postSearch } }
+          { content: { containsi: $postSearch } }
+          { excerpt: { containsi: $postSearch } }
+        ]
         slug: { eq: $postSlug }
-        title: { containsi: $postSearch }
         categories: { slug: { eq: $categorySlug } }
         author: { slug: { eq: $authorSlug } }
         tags: { slug: { eq: $tagSlug } }
